@@ -14,10 +14,10 @@ namespace UetMap
             InitializeComponent();
 
             // Set default road color
-            // currentRoadColor = Color.Gray;
+            //currentRoadColor = Color.Blue;
 
             // Register the Paint event
-            // this.Paint += Form1_Paint;
+            //panel1.Paint += Form1_Paint;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -53,18 +53,41 @@ namespace UetMap
             Graphics g = e.Graphics;
 
             // Pen for road with the current color
-            Pen roadPen = new Pen(currentRoadColor, 10);
+            Pen roadPen = new Pen(currentRoadColor, 3
+                );
             roadPen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
             roadPen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
 
             // Straight road
-            g.DrawLine(roadPen, 50, 50, 200, 50);
+            g.DrawLine(roadPen, 410, 425, 410, 300);
 
             // Curved road
-            Point[] curvePoints = { new Point(200, 50), new Point(250, 100), new Point(300, 50) };
+            Point[] curvePoints = { new Point(510, 400), new Point(502, 388) };
             g.DrawCurve(roadPen, curvePoints);
 
             roadPen.Dispose();
+          
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
