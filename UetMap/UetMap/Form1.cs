@@ -14,15 +14,14 @@ namespace UetMap
             InitializeComponent();
 
             // Set default road color
-            currentRoadColor = Color.Gray;
+            // currentRoadColor = Color.Gray;
 
             // Register the Paint event
-            this.Paint += Form1_Paint;
+            // this.Paint += Form1_Paint;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
             this.MaximizeBox = false;
 
             // Add a button to change the road color
@@ -34,7 +33,7 @@ namespace UetMap
             };
 
             changeColorButton.Click += ChangeColorButton_Click;
-            this.Controls.Add(changeColorButton);
+            // this.Controls.Add(changeColorButton);
         }
 
         private void ChangeColorButton_Click(object sender, EventArgs e)

@@ -8,3 +8,13 @@ C:\Semester 3\DSA\LAB\Projects\Endgame\Campus-Navigation-System\UetMap\UetMap\ob
 C:\Semester 3\DSA\LAB\Projects\Endgame\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.csproj.CoreCompileInputs.cache
 C:\Semester 3\DSA\LAB\Projects\Endgame\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.exe
 C:\Semester 3\DSA\LAB\Projects\Endgame\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.pdb
+C:\Users\HANNAN\Desktop\Campus-Navigation-System\UetMap\UetMap\bin\Debug\UetMap.exe.config
+C:\Users\HANNAN\Desktop\Campus-Navigation-System\UetMap\UetMap\bin\Debug\UetMap.exe
+C:\Users\HANNAN\Desktop\Campus-Navigation-System\UetMap\UetMap\bin\Debug\UetMap.pdb
+C:\Users\HANNAN\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.csproj.AssemblyReference.cache
+C:\Users\HANNAN\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.Form1.resources
+C:\Users\HANNAN\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.Properties.Resources.resources
+C:\Users\HANNAN\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.csproj.GenerateResource.cache
+C:\Users\HANNAN\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.csproj.CoreCompileInputs.cache
+C:\Users\HANNAN\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.exe
+C:\Users\HANNAN\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.pdb
