@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Windows.Forms;
 
 namespace UetMap
 {
@@ -29,7 +30,7 @@ namespace UetMap
                 to.AddNeighbor(from, distance);
 
             // Add visual representation of the edge
-            Edges.Add(new Edge(from, to, lineColor, lineWidth));
+            //Edges.Add(new Edge(from, to, lineColor, lineWidth));
         }
 
         // Find node by name (Location lookup)
@@ -43,7 +44,7 @@ namespace UetMap
         {
             foreach (var edge in Edges)
             {
-                edge.Draw(g);
+                //edge.Draw(g);
             }
         }
 
@@ -129,34 +130,34 @@ namespace UetMap
     }
 
     // Edge class representing a painted road (visual element)
-    class Edge
+
+
+class Edge
     {
         public GraphNode StartNode { get; set; }
         public GraphNode EndNode { get; set; }
-        public Color LineColor { get; set; }
-        public float LineWidth { get; set; }
+        public Panel RoadPanel { get; set; }
 
-        public Edge(GraphNode startNode, GraphNode endNode, Color lineColor, float lineWidth = 10f)
+        public Edge(GraphNode startNode, GraphNode endNode, Color initialColor)
         {
             StartNode = startNode;
             EndNode = endNode;
-            LineColor = lineColor;
-            LineWidth = lineWidth;
+
+            // Initialize the Panel to represent the road
+            RoadPanel = new Panel
+            {
+                BackColor = initialColor,
+            };
         }
 
-        // Draw method to render the edge using Graphics
-        public void Draw(Graphics g)
+        /// <summary>
+        /// Changes the color of the road panel.
+        /// </summary>
+        /// <param name="newColor">The new color to apply to the road.</param>
+        public void ChangeRoadColor(Color newColor)
         {
-            // Convert coordinates to points for visualization
-            Point startPoint = new Point((int)StartNode.Coordinates.x, (int)StartNode.Coordinates.y);
-            Point endPoint = new Point((int)EndNode.Coordinates.x, (int)EndNode.Coordinates.y);
-
-            using (Pen pen = new Pen(LineColor, LineWidth))
-            {
-                pen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
-                pen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
-                g.DrawLine(pen, startPoint, endPoint);
-            }
+            RoadPanel.BackColor = newColor;
         }
     }
+
 }
