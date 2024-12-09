@@ -86,6 +86,7 @@ namespace UetMap
             GraphNode Mechatronics = new GraphNode("Mechatronics Dept.", "Department");
             GraphNode Auditorium = new GraphNode("UET Auditorium","Department");
             GraphNode Physics = new GraphNode("Physics Dept.", "Department");
+            GraphNode Gate5 = new GraphNode("Gate 5", "Gate");
             GraphNode Khadija = new GraphNode("Khadija Hall", "Hostel");
             GraphNode PowerHouse = new GraphNode("Power House", "Power generation");
             GraphNode Faculty = new GraphNode("Bachelor Faculty Hostel", "Hostel");
@@ -136,6 +137,8 @@ namespace UetMap
             GraphNode Polymer = new GraphNode("Polymer Engg.", "Department");
             GraphNode ColonyGate2 = new GraphNode("Colony Gate 2", "Gate");
         }
+
+        
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
