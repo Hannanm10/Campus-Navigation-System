@@ -128,6 +128,11 @@ namespace UetMap
             }
         }
 
+        public void Clear()
+        {
+            head = null;
+        }
+
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();

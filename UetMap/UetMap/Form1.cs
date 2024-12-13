@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -8,7 +9,7 @@ namespace UetMap
     {
         // Variable to hold the current road color
         private Color currentRoadColor;
-
+        private List<Panel> currentColored;
         private Graph Map;
 
         public Form1()
@@ -19,7 +20,7 @@ namespace UetMap
             comboBox1.SelectedIndex = -1;
             comboBox2.DataSource = Enum.GetValues(typeof(Locations));
             comboBox2.SelectedIndex = -1;
-
+            currentColored = new List<Panel>();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -345,6 +346,7 @@ namespace UetMap
 
         private void ProcessPathEdges(UetMap.List<GraphNode> path)
         {
+            currentColored.Clear(); 
             float distance=0;
             // Check if the path is valid
             if (path == null || path.Count() < 2)
@@ -371,6 +373,7 @@ namespace UetMap
                         //Console.WriteLine($"Edge found between {node1.Name} and {node2.Name}, Distance: {edge.Distance}");
                         edge.RoadPanel.BackColor = Color.LightGreen;
                         distance += edge.Distance;
+                        currentColored.Add(edge.RoadPanel);
                     }
                     else
                     {
@@ -384,7 +387,9 @@ namespace UetMap
             }
         }
 
-
+        private void reset()
+        {
+        }
 
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -419,23 +424,50 @@ namespace UetMap
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox1.Text == "" || comboBox2.Text == "")
+            if (comboBox1.SelectedItem == null || comboBox2.SelectedItem == null)
             {
                 MessageBox.Show("Fill Details First!!!");
+                Reset();
             }
             else if (comboBox1.Text == comboBox2.Text)
             {
                 MessageBox.Show("Choose Different Locations!!!");
+                Reset();
             }
             else if (!comboBox1.Items.Contains(comboBox1.SelectedItem) || !comboBox2.Items.Contains(comboBox2.SelectedItem))
             {
                 MessageBox.Show("Choose from locations Provided!!!");
+                Reset();
             }
             else
             {
                 List<GraphNode> path = Map.Dijkstra(Map.FindNode(comboBox1.Text), Map.FindNode(comboBox2.Text));
                 ProcessPathEdges(path);
             }
+        }
+
+        private void Reset()
+        {
+
+            comboBox1.SelectedItem=null;
+            comboBox2.SelectedItem=null;
+            textBox1.Text = "";
+            ChangePanelColors();
+        }
+        private void ChangePanelColors()
+        {
+            foreach (var panel in currentColored)
+            {
+                if (panel != null)
+                {
+                    panel.BackColor = Color.DeepSkyBlue;
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Reset();
         }
     }
 }
