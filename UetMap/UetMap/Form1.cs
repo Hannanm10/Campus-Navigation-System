@@ -72,7 +72,7 @@ namespace UetMap
 
         private void LoadNodes()
         {
-            GraphNode Gate = new GraphNode("Main Gate","Entry/Exit");
+            GraphNode Gate3 = new GraphNode("Main Gate","Entry/Exit");
             GraphNode Electrical = new GraphNode("Electrical Engg.", "Department");
             GraphNode Library = new GraphNode("Library", "Library");
             GraphNode CS = new GraphNode("Computer Science", "Department");
@@ -89,7 +89,7 @@ namespace UetMap
             GraphNode Gate5 = new GraphNode("Gate 5", "Gate");
             GraphNode Khadija = new GraphNode("Khadija Hall", "Hostel");
             GraphNode PowerHouse = new GraphNode("Power House", "Power generation");
-            GraphNode Faculty = new GraphNode("Bachelor Faculty Hostel", "Hostel");
+            GraphNode FacultyHostel = new GraphNode("Bachelor Faculty Hostel", "Hostel");
             GraphNode GirlsGround = new GraphNode("Girls Playground", "Sports");
             GraphNode NewGirls = new GraphNode("New Girls Hostel", "Hostel");
             GraphNode Mining = new GraphNode("Mining Engg.", "Department");
@@ -136,9 +136,99 @@ namespace UetMap
             GraphNode Architecture = new GraphNode("Architecture", "Department");
             GraphNode Polymer = new GraphNode("Polymer Engg.", "Department");
             GraphNode ColonyGate2 = new GraphNode("Colony Gate 2", "Gate");
+
+            Edge IqbalToBColony = new Edge(IqbalHall, BColony, panel83);
+            Edge SirSyedToBColony = new Edge(SirSyedHall, BColony, panel83);
+            Edge BColonyToSportsComplex = new Edge(BColony, SportsComplex, panel88);
+            Edge SportsComplexToQuaid = new Edge(SportsComplex, QuaideAzamHall, panel82);
+            Edge SportsComplexToQCanteen = new Edge(SportsComplex, QCanteen, panel82);
+            Edge SportsComplexToLiaquatHall = new Edge(SportsComplex, LiaquatHall, panel82);
+            Edge SportsComplexToMumtaz = new Edge(SportsComplex, MumtazHall, panel81);
+            Edge SportsComplexToSecurity = new Edge(SportsComplex, SecurityOffice, panel58);
+            Edge SecurityOfficeToJJ = new Edge(SecurityOffice, JJ, panel95);
+            Edge SecurityOfficeToBhola = new Edge(SecurityOffice, BholaCafe, panel95);
+            Edge SecurityOfficeToFtGround = new Edge(SecurityOffice, FootballGround, panel95);
+            Edge JJToDataScience = new Edge(JJ, DataScience, panel60);
+            Edge BholaToDataScience = new Edge(BholaCafe, DataScience, panel60);
+            Edge FootballGToDataScience = new Edge(FootballGround, DataScience, panel60);
+            Edge DataScienceToGate2 = new Edge(DataScience, ColonyGate2, panel62);
+            Edge ColonyGate2ToColonyGate1 = new Edge(ColonyGate2, StaffColony, panel64);
+            Edge ColonyGate2ToChem = new Edge(ColonyGate2, Chemical, panel75);
+            Edge ColonyGate2ToGeology = new Edge(ColonyGate2, Geological, panel75);
+            Edge DataScienceToMetallurgy = new Edge(DataScience, Metallurgical, panel59);
+            Edge MetallurgyToCRP = new Edge(Metallurgical, CRP, panel85);
+            Edge MetallurgyToPolymer = new Edge(Metallurgical, Polymer, panel84);
+            Edge StaffColonyToMining = new Edge(StaffColony, Mining, panel66);
+            Edge StaffColonyToPostOffice = new Edge(StaffColony, Postoffice, panel66);
+            Edge PolymerToMining = new Edge(Polymer, Mining, panel104);
+            Edge CRPToMasjid = new Edge(CRP, JamiaMosque, panel69);
+            Edge MasjidToTransportOffice = new Edge(JamiaMosque, TransportOffice, panel55);
+            Edge TransportOfficeToIBM = new Edge(TransportOffice, IBM, panel99);
+            Edge TransportOfficeToSSC = new Edge(TransportOffice, SSC, panel99);
+            Edge SecurityOfficeToShopping = new Edge(SecurityOffice, ShoppingCentre, panel57);
+            Edge ShoppingToEdhiHall = new Edge(ShoppingCentre, EdhiHall, panel78);
+            Edge ShoppingToZubairHall = new Edge(ShoppingCentre, ZubairHall, panel78);
+            Edge ShoppingToMBQHall = new Edge(ShoppingCentre, MBQHall, panel78);
+            Edge ShoppingToSSC = new Edge(ShoppingCentre, SSC, panel98);
+            Edge SSCToAnnexeGround = new Edge(SSC, AnnexeGround, panel56);
+            Edge IBMToAnnexeGround = new Edge(IBM, AnnexeGround, panel56);
+            Edge SSCToTariqHall = new Edge(SSC, TariqHall, panel56);
+            Edge IBMToTariqHall = new Edge(IBM, TariqHall, panel56);
+            Edge TariqToKhalid = new Edge(TariqHall, KhalidHall, panel93);
+            Edge AnnexeGroundToKhalid = new Edge(AnnexeGround, KhalidHall, panel93);
+            Edge KhalidToAnnexe = new Edge(KhalidHall, Annexe, panel92);
+            Edge KhalidToChemistry = new Edge(KhalidHall, Chemistry, panel92);
+            Edge KhalidToWorkshop = new Edge(KhalidHall, Workshop, panel92);
+            Edge AnnexeToAutomotive = new Edge(Annexe, Automotive, panel91);
+            Edge ChemistryToAutomotive = new Edge(Chemistry, Automotive, panel91);
+            Edge WorkShopToAutomotive = new Edge(Workshop, Automotive, panel90);
+            Edge AutomotiveToAnnexeGround = new Edge(Automotive, AnnexeGround, panel90);
+            Edge TransportOfficeToArchEngg = new Edge(TransportOffice, ArchEngg, panel79);
+            Edge ArchEnggToAdminOffice = new Edge(ArchEngg, AdminOffice, panel54);
+            Edge ArchEnggToHBL = new Edge(ArchEngg, HBL, panel54);
+            Edge ArchEnggToIsl = new Edge(ArchEngg, IslamicStudies, panel76);
+            Edge ArchEnggToLalazar = new Edge(ArchEngg, Lalazar, panel76);
+            Edge IslToCRP = new Edge(IslamicStudies, CRP, panel77);
+            Edge LalazarToCRP = new Edge(Lalazar, CRP, panel77);
+            Edge IslToVCOffice = new Edge(IslamicStudies, VCOffice, panel53);
+            Edge LalazarToVCOffice = new Edge(Lalazar, VCOffice, panel53);
+            Edge PostOfficeToGSSC =  new Edge(Postoffice, GSSC, panel86);
+            Edge MiningToGSSC = new Edge(Mining, GSSC, panel86);
+            Edge CRPToArchitecture = new Edge(CRP, Architecture, panel105);
+            Edge ArchitectureToLibrary = new Edge(Architecture, Library, panel106);
+            Edge LibraryToLalazar = new Edge(Library, Lalazar, panel100);
+            Edge LalazarToElectrical = new Edge(Lalazar, Electrical, panel102);
+            Edge ElectricalToGate3 = new Edge(Electrical, Gate3, panel103);
+            Edge PolymerToLibrary = new Edge(Polymer, Library, panel80);
+            Edge LibraryToCivil = new Edge(Library, Civil, panel87);
+            Edge LibraryToCS = new Edge(Library, CS, panel87);
+            Edge LibraryToTransportation = new Edge(Library, Transportation, panel87);
+            Edge CivilToGSSC = new Edge(Civil, GSSC, panel52);
+            Edge CSToGSSC = new Edge(CS, GSSC, panel52);
+            Edge TransportationToGSSC = new Edge(Transportation, GSSC, panel52);
+            Edge GSSCToKICS = new Edge(GSSC, KICS, panel74);
+            Edge GSSCToMath = new Edge(GSSC, Math, panel74);
+            Edge GSSCToCE = new Edge(GSSC, ComputerEngg, panel74);
+            Edge MathToMechatronics = new Edge(Math, Mechatronics, panel107);
+            Edge KICSToMechatronics = new Edge(KICS, Mechatronics, panel107);
+            Edge CEToMechatronics = new Edge(ComputerEngg, Mechatronics, panel107);
+            Edge MathToMechanical = new Edge(Math, Mechanical, panel107);
+            Edge KICSToMechanical = new Edge(KICS, Mechanical, panel107);
+            Edge CEToMechanical = new Edge(ComputerEngg, Mechanical, panel107);
+            Edge GSSCToAuditorium = new Edge(GSSC, Auditorium, panel73);
+            Edge AudiToPhysics = new Edge(Auditorium, Physics, panel71);
+            Edge PhysicsToGate5 = new Edge(Physics, Gate5, panel68);
+            Edge AuditoriumToKhadijaHall = new Edge(Auditorium, Khadija, panel101);
+            Edge KhadijaHallToPowerHouse = new Edge(Khadija, PowerHouse, panel72);
+            Edge KhadijaHallToFacultyHostel = new Edge(Khadija, FacultyHostel, panel70);
+            Edge KhadijaHallToGirlsGround = new Edge(Khadija, GirlsGround, panel70);
+            Edge FacultyHostelToNewGirlsHall = new Edge(FacultyHostel, NewGirls, panel67);
+            Edge GirlsGroundToNewGirlsHAll = new Edge(GirlsGround, NewGirls, panel67);
+
+
         }
 
-        
+
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 

@@ -131,33 +131,29 @@ namespace UetMap
 
     // Edge class representing a painted road (visual element)
 
-
-class Edge
+    class Edge
     {
         public GraphNode StartNode { get; set; }
         public GraphNode EndNode { get; set; }
         public Panel RoadPanel { get; set; }
 
-        public Edge(GraphNode startNode, GraphNode endNode, Color initialColor)
+
+        public Edge(GraphNode startNode, GraphNode endNode, Panel roadPanel)
         {
             StartNode = startNode;
             EndNode = endNode;
-
-            // Initialize the Panel to represent the road
-            RoadPanel = new Panel
-            {
-                BackColor = initialColor,
-            };
+            RoadPanel = roadPanel;
         }
 
-        /// <summary>
-        /// Changes the color of the road panel.
-        /// </summary>
-        /// <param name="newColor">The new color to apply to the road.</param>
+
         public void ChangeRoadColor(Color newColor)
         {
-            RoadPanel.BackColor = newColor;
+            if (RoadPanel != null)
+            {
+                RoadPanel.BackColor = newColor;
+            }
         }
     }
+
 
 }
