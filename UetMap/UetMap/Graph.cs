@@ -20,6 +20,19 @@ namespace UetMap
                 Nodes.Add(node);
         }
 
+        public Edge FindEdge(GraphNode node1, GraphNode node2)
+        {
+            // Search through the edges to find one that connects the two nodes
+            foreach (var edge in Edges)
+            {
+                if ((edge.StartNode == node1 && edge.EndNode == node2) ||
+                    (edge.StartNode == node2 && edge.EndNode == node1))
+                {
+                    return edge; // Return the edge if found
+                }
+            }
+            return null; // Return null if no such edge exists
+        }
         // Add edge between nodes (undirected graph)
         public void AddEdge(Edge edge, float distance)
         {

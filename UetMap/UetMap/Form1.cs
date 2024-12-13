@@ -20,159 +20,111 @@ namespace UetMap
             comboBox2.DataSource = Enum.GetValues(typeof(Locations));
             comboBox2.SelectedIndex = -1;
 
-            // Set default road color
-            //currentRoadColor = Color.Blue;
-
-            // Register the Paint event
-            //panel1.Paint += Form1_Paint;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             this.MaximizeBox = false;
-
-            // Add a button to change the road color
-            Button changeColorButton = new Button
-            {
-                Text = "Change Road Color",
-                Location = new Point(10, 10),
-                AutoSize = true
-            };
-
-            changeColorButton.Click += ChangeColorButton_Click;
-            // this.Controls.Add(changeColorButton);
-        }
-
-        private void ChangeColorButton_Click(object sender, EventArgs e)
-        {
-            // Change the road color at runtime
-            if (currentRoadColor == Color.Gray)
-                currentRoadColor = Color.Blue; // Change to Blue
-            else
-                currentRoadColor = Color.Gray; // Change back to Gray
-
-            // Trigger a repaint
-            this.Invalidate();
-        }
-
-        private void Form1_Paint(object sender, PaintEventArgs e)
-        {
-            Graphics g = e.Graphics;
-
-            // Pen for road with the current color
-            Pen roadPen = new Pen(currentRoadColor, 3);
-            roadPen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
-            roadPen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
-
-            // Straight road
-            g.DrawLine(roadPen, 410, 425, 410, 300);
-
-            // Curved road
-            Point[] curvePoints = { new Point(510, 400), new Point(502, 388) };
-            g.DrawCurve(roadPen, curvePoints);
-
-            roadPen.Dispose();
-          
-
+            LoadNodes();
         }
 
         private void LoadNodes()
         {
             // Create and add all GraphNodes to the Map object
-            GraphNode Gate3 = new GraphNode("Main Gate", "Entry/Exit");
-            GraphNode Electrical = new GraphNode("Electrical Engg.", "Department");
+            GraphNode Gate3 = new GraphNode("Gate3", "Entry/Exit");
+            GraphNode ElectricalDepartment = new GraphNode("ElectricalDepartment", "Department");
             GraphNode Library = new GraphNode("Library", "Library");
-            GraphNode CS = new GraphNode("Computer Science", "Department");
-            GraphNode Civil = new GraphNode("Civil Engg.", "Department");
-            GraphNode Transportation = new GraphNode("Transport Engg.", "Department");
+            GraphNode ComputerScience = new GraphNode("ComputerScience", "Department");
+            GraphNode CivilDepartment = new GraphNode("CivilDepartment", "Department");
+            GraphNode TransportationDepartment = new GraphNode("TransportationDepartment", "Department");
             GraphNode GSSC = new GraphNode("GSSC", "Cafe");
-            GraphNode ComputerEngg = new GraphNode("Computer Engg.", "Department");
-            GraphNode Math = new GraphNode("Mathematics", "Department");
+            GraphNode ComputerEngineering = new GraphNode("ComputerEngineering", "Department");
+            GraphNode MathematicsDepartment = new GraphNode("MathematicsDepartment", "Department");
             GraphNode KICS = new GraphNode("KICS", "Institute");
-            GraphNode Mechanical = new GraphNode("Mechanical Engg.", "Department");
-            GraphNode Mechatronics = new GraphNode("Mechatronics Dept.", "Department");
-            GraphNode Auditorium = new GraphNode("UET Auditorium", "Department");
-            GraphNode Physics = new GraphNode("Physics Dept.", "Department");
-            GraphNode Gate5 = new GraphNode("Gate 5", "Gate");
-            GraphNode Khadija = new GraphNode("Khadija Hall", "Hostel");
-            GraphNode PowerHouse = new GraphNode("Power House", "Power generation");
-            GraphNode FacultyHostel = new GraphNode("Bachelor Faculty Hostel", "Hostel");
-            GraphNode GirlsGround = new GraphNode("Girls Playground", "Sports");
-            GraphNode NewGirls = new GraphNode("New Girls Hostel", "Hostel");
-            GraphNode Mining = new GraphNode("Mining Engg.", "Department");
-            GraphNode Postoffice = new GraphNode("Post Office", "Office");
-            GraphNode StaffColony = new GraphNode("Staff Colony", "Colony");
-            GraphNode Chemical = new GraphNode("Chemical Engg.", "Department");
-            GraphNode Geological = new GraphNode("Geological Engg.", "Department");
-            GraphNode Metallurgical = new GraphNode("Metallurgical Engg.", "Department");
-            GraphNode DataScience = new GraphNode("Data Science Institute", "Department");
-            GraphNode JJ = new GraphNode("JJ Stadium", "Sports");
-            GraphNode FootballGround = new GraphNode("Football Ground", "Sports");
-            GraphNode BholaCafe = new GraphNode("Bhola Cafe", "Cafe");
-            GraphNode SecurityOffice = new GraphNode("Security Office", "Office");
-            GraphNode SportsComplex = new GraphNode("Sports Complex", "Sports");
-            GraphNode BColony = new GraphNode("B Colony", "Colony");
-            GraphNode MumtazHall = new GraphNode("Mumtaz Hall", "Hostel");
-            GraphNode QuaideAzamHall = new GraphNode("Quaid-e-Azam Hall", "Hostel");
-            GraphNode LiaquatHall = new GraphNode("Liaquat Hall", "Hostel");
-            GraphNode QCanteen = new GraphNode("Q Canteen", "Cafe");
-            GraphNode IqbalHall = new GraphNode("Iqbal Hall", "Hostel");
-            GraphNode SirSyedHall = new GraphNode("Sir Syed Hall", "Hostel");
-            GraphNode ShoppingCentre = new GraphNode("Shopping Centre", "Shopping");
-            GraphNode ZubairHall = new GraphNode("Zubair Hall", "Hostel");
-            GraphNode MBQHall = new GraphNode("MBQ Hall", "Hostel");
-            GraphNode EdhiHall = new GraphNode("Edhi Hall", "Hostel");
+            GraphNode MechanicalDepartment = new GraphNode("MechanicalDepartment", "Department");
+            GraphNode MechatronicsDepartment = new GraphNode("MechatronicsDepartment", "Department");
+            GraphNode Auditorium = new GraphNode("Auditorium", "Department");
+            GraphNode PhysicsDepartment = new GraphNode("PhysicsDepartment", "Department");
+            GraphNode Gate5 = new GraphNode("Gate5", "Gate");
+            GraphNode KhadijaHall = new GraphNode("KhadijaHall", "Hostel");
+            GraphNode PowerHouse = new GraphNode("PowerHouse", "Power generation");
+            GraphNode FacultyHostel = new GraphNode("FacultyHostel", "Hostel");
+            GraphNode GirlsGround = new GraphNode("GirlsGround", "Sports");
+            GraphNode NewGirlsHostel = new GraphNode("NewGirlsHostel", "Hostel");
+            GraphNode MiningDepartment = new GraphNode("MiningDepartment", "Department");
+            GraphNode Postoffice = new GraphNode("PostOffice", "Office");
+            GraphNode StaffColony = new GraphNode("StaffColony", "Colony");
+            GraphNode ChemicalDepartment = new GraphNode("ChemicalDepartment", "Department");
+            GraphNode GeologicalDepartment = new GraphNode("GeologicalDepartment", "Department");
+            GraphNode MetallurgicalDepartment = new GraphNode("MetallurgicalDepartment", "Department");
+            GraphNode InstituteofDataScience = new GraphNode("InstituteofDataScience", "Department");
+            GraphNode JJCricketGround = new GraphNode("JJCricketGround", "Sports");
+            GraphNode FootballGround = new GraphNode("FootballGround", "Sports");
+            GraphNode BholaCafe = new GraphNode("BholaCafe", "Cafe");
+            GraphNode SecurityOffice = new GraphNode("SecurityOffice", "Office");
+            GraphNode SportsComplex = new GraphNode("SportsComplex", "Sports");
+            GraphNode BColony = new GraphNode("BColony", "Colony");
+            GraphNode MumtazHall = new GraphNode("MumtazHall", "Hostel");
+            GraphNode QuaideAzamHall = new GraphNode("QuaideAzamHall", "Hostel");
+            GraphNode LiaquatHall = new GraphNode("LiaquatHall", "Hostel");
+            GraphNode QCanteen = new GraphNode("QCanteen", "Cafe");
+            GraphNode IqbalHall = new GraphNode("IqbalHall", "Hostel");
+            GraphNode SirSyedHall = new GraphNode("SirSyedHall", "Hostel");
+            GraphNode ShoppingCentre = new GraphNode("ShoppingCentre", "Shopping");
+            GraphNode ZubairHall = new GraphNode("ZubairHall", "Hostel");
+            GraphNode MBQHall = new GraphNode("MBQHall", "Hostel");
+            GraphNode EdhiHall = new GraphNode("EdhiHall", "Hostel");
             GraphNode SSC = new GraphNode("SSC", "Cafe");
-            GraphNode TariqHall = new GraphNode("Tariq Hall", "Hostel");
-            GraphNode KhalidHall = new GraphNode("Khalid Hall", "Hostel");
-            GraphNode AnnexeGround = new GraphNode("Annexe Ground", "Ground");
-            GraphNode Automotive = new GraphNode("Automotive Engg.", "Department");
-            GraphNode Workshop = new GraphNode("Mechanical Workshop", "Workshop");
+            GraphNode TariqHall = new GraphNode("TariqHall", "Hostel");
+            GraphNode KhalidHall = new GraphNode("KhalidHall", "Hostel");
+            GraphNode AnnexeGround = new GraphNode("AnnexeGround", "Ground");
+            GraphNode AutomotiveDepartment = new GraphNode("AutomotiveDepartment", "Department");
+            GraphNode Workshop = new GraphNode("Workshop", "Workshop");
             GraphNode Annexe = new GraphNode("Annexe", "Cafe");
-            GraphNode Chemistry = new GraphNode("Chemistry", "Department");
+            GraphNode ChemistryDepartment = new GraphNode("ChemistryDepartment", "Department");
             GraphNode IBM = new GraphNode("IBM", "Department");
-            GraphNode JamiaMosque = new GraphNode("Jamia Mosque", "Mosque");
-            GraphNode TransportOffice = new GraphNode("Transport Office", "Office");
-            GraphNode ArchEngg = new GraphNode("Architecture Engg.", "Department");
-            GraphNode IslamicStudies = new GraphNode("Islamic Studies", "Department");
-            GraphNode AdminOffice = new GraphNode("Admin Office", "Office");
+            GraphNode JamiaMosque = new GraphNode("JamiaMosque", "Mosque");
+            GraphNode TransportOffice = new GraphNode("TransportOffice", "Office");
+            GraphNode ArchitectureEngineering = new GraphNode("ArchitectureEngineering", "Department");
+            GraphNode IslamicStudies = new GraphNode("IslamicStudies", "Department");
+            GraphNode AdminOffice = new GraphNode("AdminOffice", "Office");
             GraphNode HBL = new GraphNode("HBL", "Bank");
-            GraphNode VCOffice = new GraphNode("VC Office", "Office");
+            GraphNode VCOffice = new GraphNode("VCOffice", "Office");
             GraphNode Lalazar = new GraphNode("Lalazar", "Park");
             GraphNode CRP = new GraphNode("CRP", "Department");
-            GraphNode Architecture = new GraphNode("Architecture", "Department");
-            GraphNode Polymer = new GraphNode("Polymer Engg.", "Department");
+            GraphNode ArchitectureAndDesign = new GraphNode("ArchitectureAndDesign", "Department");
+            GraphNode PolymerDepartment = new GraphNode("PolymerDepartment", "Department");
             GraphNode ColonyGate2 = new GraphNode("Colony Gate 2", "Gate");
 
             // Add nodes to the Map
             Map.AddNode(Gate3);
-            Map.AddNode(Electrical);
+            Map.AddNode(ElectricalDepartment);
             Map.AddNode(Library);
-            Map.AddNode(CS);
-            Map.AddNode(Civil);
-            Map.AddNode(Transportation);
+            Map.AddNode(ComputerScience);
+            Map.AddNode(CivilDepartment);
+            Map.AddNode(TransportationDepartment);
             Map.AddNode(GSSC);
-            Map.AddNode(ComputerEngg);
-            Map.AddNode(Math);
+            Map.AddNode(ComputerEngineering);
+            Map.AddNode(MathematicsDepartment);
             Map.AddNode(KICS);
-            Map.AddNode(Mechanical);
-            Map.AddNode(Mechatronics);
+            Map.AddNode(MechanicalDepartment);
+            Map.AddNode(MechatronicsDepartment);
             Map.AddNode(Auditorium);
-            Map.AddNode(Physics);
+            Map.AddNode(PhysicsDepartment);
             Map.AddNode(Gate5);
-            Map.AddNode(Khadija);
+            Map.AddNode(KhadijaHall);
             Map.AddNode(PowerHouse);
             Map.AddNode(FacultyHostel);
             Map.AddNode(GirlsGround);
-            Map.AddNode(NewGirls);
-            Map.AddNode(Mining);
+            Map.AddNode(NewGirlsHostel);
+            Map.AddNode(MiningDepartment);
             Map.AddNode(Postoffice);
             Map.AddNode(StaffColony);
-            Map.AddNode(Chemical);
-            Map.AddNode(Geological);
-            Map.AddNode(Metallurgical);
-            Map.AddNode(DataScience);
-            Map.AddNode(JJ);
+            Map.AddNode(ChemicalDepartment);
+            Map.AddNode(GeologicalDepartment);
+            Map.AddNode(MetallurgicalDepartment);
+            Map.AddNode(InstituteofDataScience);
+            Map.AddNode(JJCricketGround);
             Map.AddNode(FootballGround);
             Map.AddNode(BholaCafe);
             Map.AddNode(SecurityOffice);
@@ -192,22 +144,22 @@ namespace UetMap
             Map.AddNode(TariqHall);
             Map.AddNode(KhalidHall);
             Map.AddNode(AnnexeGround);
-            Map.AddNode(Automotive);
+            Map.AddNode(AutomotiveDepartment);
             Map.AddNode(Workshop);
             Map.AddNode(Annexe);
-            Map.AddNode(Chemistry);
+            Map.AddNode(ChemistryDepartment);
             Map.AddNode(IBM);
             Map.AddNode(JamiaMosque);
             Map.AddNode(TransportOffice);
-            Map.AddNode(ArchEngg);
+            Map.AddNode(ArchitectureEngineering);
             Map.AddNode(IslamicStudies);
             Map.AddNode(AdminOffice);
             Map.AddNode(HBL);
             Map.AddNode(VCOffice);
             Map.AddNode(Lalazar);
             Map.AddNode(CRP);
-            Map.AddNode(Architecture);
-            Map.AddNode(Polymer);
+            Map.AddNode(ArchitectureAndDesign);
+            Map.AddNode(PolymerDepartment);
             Map.AddNode(ColonyGate2);
 
 
@@ -219,23 +171,23 @@ namespace UetMap
             Edge SportsComplexToLiaquatHall = new Edge(SportsComplex, LiaquatHall, panel82);
             Edge SportsComplexToMumtaz = new Edge(SportsComplex, MumtazHall, panel81);
             Edge SportsComplexToSecurity = new Edge(SportsComplex, SecurityOffice, panel58);
-            Edge SecurityOfficeToJJ = new Edge(SecurityOffice, JJ, panel95);
+            Edge SecurityOfficeToJJ = new Edge(SecurityOffice, JJCricketGround, panel95);
             Edge SecurityOfficeToBhola = new Edge(SecurityOffice, BholaCafe, panel95);
             Edge SecurityOfficeToFtGround = new Edge(SecurityOffice, FootballGround, panel95);
-            Edge JJToDataScience = new Edge(JJ, DataScience, panel60);
-            Edge BholaToDataScience = new Edge(BholaCafe, DataScience, panel60);
-            Edge FootballGToDataScience = new Edge(FootballGround, DataScience, panel60);
-            Edge DataScienceToGate2 = new Edge(DataScience, ColonyGate2, panel62);
+            Edge JJToDataScience = new Edge(JJCricketGround, InstituteofDataScience, panel60);
+            Edge BholaToDataScience = new Edge(BholaCafe, InstituteofDataScience, panel60);
+            Edge FootballGToDataScience = new Edge(FootballGround, InstituteofDataScience, panel60);
+            Edge DataScienceToGate2 = new Edge(InstituteofDataScience, ColonyGate2, panel62);
             Edge ColonyGate2ToColonyGate1 = new Edge(ColonyGate2, StaffColony, panel64);
-            Edge ColonyGate2ToChem = new Edge(ColonyGate2, Chemical, panel75);
-            Edge ColonyGate2ToGeology = new Edge(ColonyGate2, Geological, panel75);
-            Edge DataScienceToMetallurgy = new Edge(DataScience, Metallurgical, panel59);
-            Edge MetallurgyToCRP = new Edge(Metallurgical, CRP, panel85);
-            Edge MetallurgyToPolymer = new Edge(Metallurgical, Polymer, panel84);
-            Edge StaffColonyToMining = new Edge(StaffColony, Mining, panel66);
+            Edge ColonyGate2ToChem = new Edge(ColonyGate2, ChemicalDepartment, panel75);
+            Edge ColonyGate2ToGeology = new Edge(ColonyGate2, GeologicalDepartment, panel75);
+            Edge DataScienceToMetallurgy = new Edge(InstituteofDataScience, MetallurgicalDepartment, panel59);
+            Edge MetallurgyToCRP = new Edge(MetallurgicalDepartment, CRP, panel85);
+            Edge MetallurgyToPolymer = new Edge(MetallurgicalDepartment, PolymerDepartment, panel84);
+            Edge StaffColonyToMining = new Edge(StaffColony, MiningDepartment, panel66);
             Edge StaffColonyToPostOffice = new Edge(StaffColony, Postoffice, panel66);
-            Edge PolymerToMining = new Edge(Polymer, Mining, panel104);
-            Edge PolymerToPostOffice = new Edge(Polymer, Postoffice, panel104);
+            Edge PolymerToMining = new Edge(PolymerDepartment, MiningDepartment, panel104);
+            Edge PolymerToPostOffice = new Edge(PolymerDepartment, Postoffice, panel104);
             Edge CRPToMasjid = new Edge(CRP, JamiaMosque, panel69);
             Edge MasjidToTransportOffice = new Edge(JamiaMosque, TransportOffice, panel55);
             Edge TransportOfficeToIBM = new Edge(TransportOffice, IBM, panel99);
@@ -252,53 +204,53 @@ namespace UetMap
             Edge TariqToKhalid = new Edge(TariqHall, KhalidHall, panel93);
             Edge AnnexeGroundToKhalid = new Edge(AnnexeGround, KhalidHall, panel93);
             Edge KhalidToAnnexe = new Edge(KhalidHall, Annexe, panel92);
-            Edge KhalidToChemistry = new Edge(KhalidHall, Chemistry, panel92);
+            Edge KhalidToChemistry = new Edge(KhalidHall, ChemistryDepartment, panel92);
             Edge KhalidToWorkshop = new Edge(KhalidHall, Workshop, panel92);
-            Edge AnnexeToAutomotive = new Edge(Annexe, Automotive, panel91);
-            Edge ChemistryToAutomotive = new Edge(Chemistry, Automotive, panel91);
-            Edge WorkShopToAutomotive = new Edge(Workshop, Automotive, panel90);
-            Edge AutomotiveToAnnexeGround = new Edge(Automotive, AnnexeGround, panel90);
-            Edge TransportOfficeToArchEngg = new Edge(TransportOffice, ArchEngg, panel79);
-            Edge ArchEnggToAdminOffice = new Edge(ArchEngg, AdminOffice, panel54);
-            Edge ArchEnggToHBL = new Edge(ArchEngg, HBL, panel54);
-            Edge ArchEnggToIsl = new Edge(ArchEngg, IslamicStudies, panel76);
-            Edge ArchEnggToLalazar = new Edge(ArchEngg, Lalazar, panel76);
+            Edge AnnexeToAutomotive = new Edge(Annexe, AutomotiveDepartment, panel91);
+            Edge ChemistryToAutomotive = new Edge(ChemistryDepartment, AutomotiveDepartment, panel91);
+            Edge WorkShopToAutomotive = new Edge(Workshop, AutomotiveDepartment, panel90);
+            Edge AutomotiveToAnnexeGround = new Edge(AutomotiveDepartment, AnnexeGround, panel90);
+            Edge TransportOfficeToArchEngg = new Edge(TransportOffice, ArchitectureEngineering, panel79);
+            Edge ArchEnggToAdminOffice = new Edge(ArchitectureEngineering, AdminOffice, panel54);
+            Edge ArchEnggToHBL = new Edge(ArchitectureEngineering, HBL, panel54);
+            Edge ArchEnggToIsl = new Edge(ArchitectureEngineering, IslamicStudies, panel76);
+            //Edge ArchEnggToLalazar = new Edge(ArchEngg, Lalazar, panel76);
             Edge IslToCRP = new Edge(IslamicStudies, CRP, panel77);
-            Edge LalazarToCRP = new Edge(Lalazar, CRP, panel77);
+            //Edge LalazarToCRP = new Edge(Lalazar, CRP, panel77);
             Edge IslToVCOffice = new Edge(IslamicStudies, VCOffice, panel53);
-            Edge LalazarToVCOffice = new Edge(Lalazar, VCOffice, panel53);
+            //Edge LalazarToVCOffice = new Edge(Lalazar, VCOffice, panel53);
             Edge PostOfficeToGSSC = new Edge(Postoffice, GSSC, panel86);
-            Edge MiningToGSSC = new Edge(Mining, GSSC, panel86);
-            Edge CRPToArchitecture = new Edge(CRP, Architecture, panel105);
-            Edge ArchitectureToLibrary = new Edge(Architecture, Library, panel106);
+            Edge MiningToGSSC = new Edge(MiningDepartment, GSSC, panel86);
+            Edge CRPToArchitecture = new Edge(CRP, ArchitectureAndDesign, panel105);
+            Edge ArchitectureToLibrary = new Edge(ArchitectureAndDesign, Library, panel106);
             Edge LibraryToLalazar = new Edge(Library, Lalazar, panel100);
-            Edge LalazarToElectrical = new Edge(Lalazar, Electrical, panel102);
-            Edge ElectricalToGate3 = new Edge(Electrical, Gate3, panel103);
-            Edge PolymerToLibrary = new Edge(Polymer, Library, panel80);
-            Edge LibraryToCivil = new Edge(Library, Civil, panel87);
-            Edge LibraryToCS = new Edge(Library, CS, panel87);
-            Edge LibraryToTransportation = new Edge(Library, Transportation, panel87);
-            Edge CivilToGSSC = new Edge(Civil, GSSC, panel52);
-            Edge CSToGSSC = new Edge(CS, GSSC, panel52);
-            Edge TransportationToGSSC = new Edge(Transportation, GSSC, panel52);
+            Edge LalazarToElectrical = new Edge(Lalazar, ElectricalDepartment, panel102);
+            Edge ElectricalToGate3 = new Edge(ElectricalDepartment, Gate3, panel103);
+            Edge PolymerToLibrary = new Edge(PolymerDepartment, Library, panel80);
+            Edge LibraryToCivil = new Edge(Library, CivilDepartment, panel87);
+            Edge LibraryToCS = new Edge(Library, ComputerScience, panel87);
+            Edge LibraryToTransportation = new Edge(Library, TransportationDepartment, panel87);
+            Edge CivilToGSSC = new Edge(CivilDepartment, GSSC, panel52);
+            Edge CSToGSSC = new Edge(ComputerScience, GSSC, panel52);
+            Edge TransportationToGSSC = new Edge(TransportationDepartment, GSSC, panel52);
             Edge GSSCToKICS = new Edge(GSSC, KICS, panel74);
-            Edge GSSCToMath = new Edge(GSSC, Math, panel74);
-            Edge GSSCToCE = new Edge(GSSC, ComputerEngg, panel74);
-            Edge MathToMechatronics = new Edge(Math, Mechatronics, panel107);
-            Edge KICSToMechatronics = new Edge(KICS, Mechatronics, panel107);
-            Edge CEToMechatronics = new Edge(ComputerEngg, Mechatronics, panel107);
-            Edge MathToMechanical = new Edge(Math, Mechanical, panel107);
-            Edge KICSToMechanical = new Edge(KICS, Mechanical, panel107);
-            Edge CEToMechanical = new Edge(ComputerEngg, Mechanical, panel107);
+            Edge GSSCToMath = new Edge(GSSC, MathematicsDepartment, panel74);
+            Edge GSSCToCE = new Edge(GSSC, ComputerEngineering, panel74);
+            Edge MathToMechatronics = new Edge(MathematicsDepartment, MechatronicsDepartment, panel107);
+            Edge KICSToMechatronics = new Edge(KICS, MechatronicsDepartment, panel107);
+            Edge CEToMechatronics = new Edge(ComputerEngineering, MechatronicsDepartment, panel107);
+            Edge MathToMechanical = new Edge(MathematicsDepartment, MechanicalDepartment, panel107);
+            Edge KICSToMechanical = new Edge(KICS, MechanicalDepartment, panel107);
+            Edge CEToMechanical = new Edge(ComputerEngineering, MechanicalDepartment, panel107);
             Edge GSSCToAuditorium = new Edge(GSSC, Auditorium, panel73);
-            Edge AudiToPhysics = new Edge(Auditorium, Physics, panel71);
-            Edge PhysicsToGate5 = new Edge(Physics, Gate5, panel68);
-            Edge AuditoriumToKhadijaHall = new Edge(Auditorium, Khadija, panel101);
-            Edge KhadijaHallToPowerHouse = new Edge(Khadija, PowerHouse, panel72);
-            Edge KhadijaHallToFacultyHostel = new Edge(Khadija, FacultyHostel, panel70);
-            Edge KhadijaHallToGirlsGround = new Edge(Khadija, GirlsGround, panel70);
-            Edge FacultyHostelToNewGirlsHall = new Edge(FacultyHostel, NewGirls, panel67);
-            Edge GirlsGroundToNewGirlsHAll = new Edge(GirlsGround, NewGirls, panel67);
+            Edge AudiToPhysics = new Edge(Auditorium, PhysicsDepartment, panel71);
+            Edge PhysicsToGate5 = new Edge(PhysicsDepartment, Gate5, panel68);
+            Edge AuditoriumToKhadijaHall = new Edge(Auditorium, KhadijaHall, panel101);
+            Edge KhadijaHallToPowerHouse = new Edge(KhadijaHall, PowerHouse, panel72);
+            Edge KhadijaHallToFacultyHostel = new Edge(KhadijaHall, FacultyHostel, panel70);
+            Edge KhadijaHallToGirlsGround = new Edge(KhadijaHall, GirlsGround, panel70);
+            Edge FacultyHostelToNewGirlsHall = new Edge(FacultyHostel, NewGirlsHostel, panel67);
+            Edge GirlsGroundToNewGirlsHAll = new Edge(GirlsGround, NewGirlsHostel, panel67);
 
             Map.AddEdge(IqbalToBColony, 64);
             Map.AddEdge(SirSyedToBColony, 170);
@@ -351,11 +303,11 @@ namespace UetMap
             Map.AddEdge(ArchEnggToAdminOffice, 210);
             Map.AddEdge(ArchEnggToHBL, 210);
             Map.AddEdge(ArchEnggToIsl, 120);
-            Map.AddEdge(ArchEnggToLalazar, 120);
+            //Map.AddEdge(ArchEnggToLalazar, 120);
             Map.AddEdge(IslToCRP, 130);
-            Map.AddEdge(LalazarToCRP, 130);
+            //Map.AddEdge(LalazarToCRP, 130);
             Map.AddEdge(IslToVCOffice, 98);
-            Map.AddEdge(LalazarToVCOffice, 98);
+            //Map.AddEdge(LalazarToVCOffice, 98);
             Map.AddEdge(PostOfficeToGSSC, 140);
             Map.AddEdge(MiningToGSSC, 140);
             Map.AddEdge(CRPToArchitecture, 53);
@@ -388,8 +340,50 @@ namespace UetMap
             Map.AddEdge(KhadijaHallToGirlsGround, 74);
             Map.AddEdge(FacultyHostelToNewGirlsHall, 69);
             Map.AddEdge(GirlsGroundToNewGirlsHAll, 69);
-
         }
+
+
+        private void ProcessPathEdges(UetMap.List<GraphNode> path)
+        {
+            float distance=0;
+            // Check if the path is valid
+            if (path == null || path.Count() < 2)
+            {
+                //Console.WriteLine("The path is invalid or too short to process.");
+                return;
+            }
+
+            // Use enumerator to iterate through the list
+            using (var enumerator = path.GetEnumerator())
+            {
+                if (!enumerator.MoveNext()) return; // Move to the first node
+                var node1 = enumerator.Current;
+
+                while (enumerator.MoveNext())
+                {
+                    var node2 = enumerator.Current;
+
+                    // Find the edge between these two nodes
+                    var edge = Map.FindEdge(node1, node2);
+
+                    if (edge != null)
+                    {
+                        //Console.WriteLine($"Edge found between {node1.Name} and {node2.Name}, Distance: {edge.Distance}");
+                        edge.RoadPanel.BackColor = Color.LightGreen;
+                        distance += edge.Distance;
+                    }
+                    else
+                    {
+                        //Console.WriteLine($"No edge found between {node1.Name} and {node2.Name}");
+                    }
+
+                    // Move to the next pair
+                    node1 = node2;
+                }
+                textBox1.Text = distance.ToString();
+            }
+        }
+
 
 
 
@@ -421,6 +415,27 @@ namespace UetMap
         private void label8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "" || comboBox2.Text == "")
+            {
+                MessageBox.Show("Fill Details First!!!");
+            }
+            else if (comboBox1.Text == comboBox2.Text)
+            {
+                MessageBox.Show("Choose Different Locations!!!");
+            }
+            else if (!comboBox1.Items.Contains(comboBox1.SelectedItem) || !comboBox2.Items.Contains(comboBox2.SelectedItem))
+            {
+                MessageBox.Show("Choose from locations Provided!!!");
+            }
+            else
+            {
+                List<GraphNode> path = Map.Dijkstra(Map.FindNode(comboBox1.Text), Map.FindNode(comboBox2.Text));
+                ProcessPathEdges(path);
+            }
         }
     }
 }

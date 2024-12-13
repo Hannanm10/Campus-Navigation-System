@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -110,146 +111,145 @@
             this.panel49 = new System.Windows.Forms.Panel();
             this.panel50 = new System.Windows.Forms.Panel();
             this.panel51 = new System.Windows.Forms.Panel();
-            this.panel100 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel42 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel99 = new System.Windows.Forms.Panel();
-            this.panel98 = new System.Windows.Forms.Panel();
-            this.panel97 = new System.Windows.Forms.Panel();
-            this.panel95 = new System.Windows.Forms.Panel();
-            this.panel96 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel41 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel93 = new System.Windows.Forms.Panel();
-            this.panel94 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel40 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel92 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel39 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel91 = new System.Windows.Forms.Panel();
-            this.panel90 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel38 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel89 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel37 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel88 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel36 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel87 = new System.Windows.Forms.Panel();
-            this.panel86 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel35 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel85 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel34 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel84 = new System.Windows.Forms.Panel();
-            this.panel83 = new System.Windows.Forms.Panel();
-            this.panel82 = new System.Windows.Forms.Panel();
-            this.panel81 = new System.Windows.Forms.Panel();
-            this.panel80 = new System.Windows.Forms.Panel();
-            this.panel79 = new System.Windows.Forms.Panel();
-            this.panel78 = new System.Windows.Forms.Panel();
-            this.panel77 = new System.Windows.Forms.Panel();
-            this.panel76 = new System.Windows.Forms.Panel();
-            this.panel75 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel32 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel74 = new System.Windows.Forms.Panel();
-            this.panel73 = new System.Windows.Forms.Panel();
-            this.panel72 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel31 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel71 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel30 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel70 = new System.Windows.Forms.Panel();
-            this.panel69 = new System.Windows.Forms.Panel();
-            this.panel68 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel28 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel67 = new System.Windows.Forms.Panel();
-            this.panel66 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel27 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel64 = new System.Windows.Forms.Panel();
-            this.panel65 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel26 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel62 = new System.Windows.Forms.Panel();
-            this.panel63 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel25 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel107 = new System.Windows.Forms.Panel();
+            this.panel106 = new System.Windows.Forms.Panel();
+            this.panel105 = new System.Windows.Forms.Panel();
+            this.panel104 = new System.Windows.Forms.Panel();
+            this.panel103 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel44 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel102 = new System.Windows.Forms.Panel();
+            this.panel101 = new System.Windows.Forms.Panel();
+            this.panel52 = new System.Windows.Forms.Panel();
+            this.panel53 = new System.Windows.Forms.Panel();
+            this.panel54 = new System.Windows.Forms.Panel();
+            this.panel55 = new System.Windows.Forms.Panel();
+            this.panel56 = new System.Windows.Forms.Panel();
+            this.panel57 = new System.Windows.Forms.Panel();
+            this.panel58 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel59 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel60 = new System.Windows.Forms.Panel();
             this.panel61 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel12 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel59 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel58 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel57 = new System.Windows.Forms.Panel();
-            this.panel56 = new System.Windows.Forms.Panel();
-            this.panel55 = new System.Windows.Forms.Panel();
-            this.panel54 = new System.Windows.Forms.Panel();
-            this.panel53 = new System.Windows.Forms.Panel();
-            this.panel52 = new System.Windows.Forms.Panel();
-            this.panel101 = new System.Windows.Forms.Panel();
-            this.panel102 = new System.Windows.Forms.Panel();
-            this.panel103 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel44 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel104 = new System.Windows.Forms.Panel();
-            this.panel105 = new System.Windows.Forms.Panel();
-            this.panel106 = new System.Windows.Forms.Panel();
-            this.panel107 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
+            this.panel62 = new System.Windows.Forms.Panel();
+            this.panel63 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel25 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel64 = new System.Windows.Forms.Panel();
+            this.panel65 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel26 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel66 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel27 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel67 = new System.Windows.Forms.Panel();
+            this.panel68 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel28 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel69 = new System.Windows.Forms.Panel();
+            this.panel70 = new System.Windows.Forms.Panel();
+            this.panel71 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel30 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel72 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel31 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel73 = new System.Windows.Forms.Panel();
+            this.panel74 = new System.Windows.Forms.Panel();
+            this.panel75 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel32 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel76 = new System.Windows.Forms.Panel();
+            this.panel77 = new System.Windows.Forms.Panel();
+            this.panel78 = new System.Windows.Forms.Panel();
+            this.panel79 = new System.Windows.Forms.Panel();
+            this.panel80 = new System.Windows.Forms.Panel();
+            this.panel81 = new System.Windows.Forms.Panel();
+            this.panel82 = new System.Windows.Forms.Panel();
+            this.panel83 = new System.Windows.Forms.Panel();
+            this.panel84 = new System.Windows.Forms.Panel();
+            this.panel85 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel34 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel86 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel35 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel87 = new System.Windows.Forms.Panel();
+            this.panel88 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel36 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel89 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel37 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel90 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel38 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel91 = new System.Windows.Forms.Panel();
+            this.panel92 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel39 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel93 = new System.Windows.Forms.Panel();
+            this.panel94 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel40 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel95 = new System.Windows.Forms.Panel();
+            this.panel96 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel41 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel97 = new System.Windows.Forms.Panel();
+            this.panel98 = new System.Windows.Forms.Panel();
+            this.panel99 = new System.Windows.Forms.Panel();
+            this.panel100 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel42 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -280,31 +280,31 @@
             this.panel43.SuspendLayout();
             this.panel44.SuspendLayout();
             this.panel51.SuspendLayout();
-            this.panel100.SuspendLayout();
-            this.panel95.SuspendLayout();
-            this.panel96.SuspendLayout();
-            this.panel93.SuspendLayout();
-            this.panel94.SuspendLayout();
-            this.panel92.SuspendLayout();
-            this.panel90.SuspendLayout();
-            this.panel89.SuspendLayout();
-            this.panel88.SuspendLayout();
-            this.panel86.SuspendLayout();
-            this.panel85.SuspendLayout();
-            this.panel75.SuspendLayout();
-            this.panel72.SuspendLayout();
-            this.panel71.SuspendLayout();
-            this.panel68.SuspendLayout();
-            this.panel66.SuspendLayout();
-            this.panel64.SuspendLayout();
-            this.panel65.SuspendLayout();
-            this.panel62.SuspendLayout();
-            this.panel63.SuspendLayout();
+            this.panel103.SuspendLayout();
+            this.panel58.SuspendLayout();
+            this.panel59.SuspendLayout();
             this.panel60.SuspendLayout();
             this.panel61.SuspendLayout();
-            this.panel59.SuspendLayout();
-            this.panel58.SuspendLayout();
-            this.panel103.SuspendLayout();
+            this.panel62.SuspendLayout();
+            this.panel63.SuspendLayout();
+            this.panel64.SuspendLayout();
+            this.panel65.SuspendLayout();
+            this.panel66.SuspendLayout();
+            this.panel68.SuspendLayout();
+            this.panel71.SuspendLayout();
+            this.panel72.SuspendLayout();
+            this.panel75.SuspendLayout();
+            this.panel85.SuspendLayout();
+            this.panel86.SuspendLayout();
+            this.panel88.SuspendLayout();
+            this.panel89.SuspendLayout();
+            this.panel90.SuspendLayout();
+            this.panel92.SuspendLayout();
+            this.panel93.SuspendLayout();
+            this.panel94.SuspendLayout();
+            this.panel95.SuspendLayout();
+            this.panel96.SuspendLayout();
+            this.panel100.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -335,27 +335,27 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(521, 1792);
             this.tableLayoutPanel2.TabIndex = 6;
             // 
-            // label4
+            // label3
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label4.Location = new System.Drawing.Point(6, 981);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(509, 53);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "DISTANCE";
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label3.Location = new System.Drawing.Point(6, 59);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(509, 106);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "CHOSE CURRENT LOCATION";
             // 
-            // comboBox2
+            // comboBox1
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(3, 764);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(515, 39);
-            this.comboBox2.TabIndex = 11;
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(3, 316);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(515, 39);
+            this.comboBox1.TabIndex = 10;
             // 
             // label2
             // 
@@ -370,27 +370,27 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "CHOSE DESTINATION LOCATION";
             // 
-            // comboBox1
+            // comboBox2
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 316);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(515, 39);
-            this.comboBox1.TabIndex = 10;
+            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(3, 764);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(515, 39);
+            this.comboBox2.TabIndex = 11;
             // 
-            // label3
+            // label4
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label3.Location = new System.Drawing.Point(6, 59);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(509, 106);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "CHOSE CURRENT LOCATION";
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label4.Location = new System.Drawing.Point(6, 981);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(509, 53);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "DISTANCE";
             // 
             // textBox1
             // 
@@ -399,6 +399,20 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(515, 38);
             this.textBox1.TabIndex = 15;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(3, 1383);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(515, 145);
+            this.button1.TabIndex = 117;
+            this.button1.Text = "FIND SHORTEST PATH";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -1150,449 +1164,770 @@
             this.panel51.TabIndex = 47;
             this.panel51.Paint += new System.Windows.Forms.PaintEventHandler(this.panel51_Paint);
             // 
-            // panel100
-            // 
-            this.panel100.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel100.Controls.Add(this.flowLayoutPanel42);
-            this.panel100.Location = new System.Drawing.Point(1673, 1136);
-            this.panel100.Name = "panel100";
-            this.panel100.Size = new System.Drawing.Size(10, 161);
-            this.panel100.TabIndex = 0;
-            // 
-            // flowLayoutPanel42
-            // 
-            this.flowLayoutPanel42.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel42.Name = "flowLayoutPanel42";
-            this.flowLayoutPanel42.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel42.TabIndex = 0;
-            // 
-            // panel99
-            // 
-            this.panel99.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel99.Location = new System.Drawing.Point(1092, 1129);
-            this.panel99.Name = "panel99";
-            this.panel99.Size = new System.Drawing.Size(127, 13);
-            this.panel99.TabIndex = 2;
-            // 
-            // panel98
-            // 
-            this.panel98.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel98.Location = new System.Drawing.Point(1092, 963);
-            this.panel98.Name = "panel98";
-            this.panel98.Size = new System.Drawing.Size(10, 179);
-            this.panel98.TabIndex = 3;
-            // 
-            // panel97
-            // 
-            this.panel97.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel97.Location = new System.Drawing.Point(507, -502);
-            this.panel97.Name = "panel97";
-            this.panel97.Size = new System.Drawing.Size(591, 16);
-            this.panel97.TabIndex = 4;
-            // 
-            // panel95
-            // 
-            this.panel95.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel95.Controls.Add(this.panel96);
-            this.panel95.Location = new System.Drawing.Point(1039, 719);
-            this.panel95.Name = "panel95";
-            this.panel95.Size = new System.Drawing.Size(322, 13);
-            this.panel95.TabIndex = 5;
-            // 
-            // panel96
-            // 
-            this.panel96.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel96.Controls.Add(this.flowLayoutPanel41);
-            this.panel96.Location = new System.Drawing.Point(693, 11);
-            this.panel96.Name = "panel96";
-            this.panel96.Size = new System.Drawing.Size(14, 173);
-            this.panel96.TabIndex = 25;
-            // 
-            // flowLayoutPanel41
-            // 
-            this.flowLayoutPanel41.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel41.Name = "flowLayoutPanel41";
-            this.flowLayoutPanel41.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel41.TabIndex = 0;
-            // 
-            // panel93
-            // 
-            this.panel93.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel93.Controls.Add(this.panel94);
-            this.panel93.Location = new System.Drawing.Point(698, 1129);
-            this.panel93.Name = "panel93";
-            this.panel93.Size = new System.Drawing.Size(331, 16);
-            this.panel93.TabIndex = 6;
-            // 
-            // panel94
-            // 
-            this.panel94.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel94.Controls.Add(this.flowLayoutPanel40);
-            this.panel94.Location = new System.Drawing.Point(323, 15);
-            this.panel94.Name = "panel94";
-            this.panel94.Size = new System.Drawing.Size(10, 175);
-            this.panel94.TabIndex = 9;
-            // 
-            // flowLayoutPanel40
-            // 
-            this.flowLayoutPanel40.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel40.Name = "flowLayoutPanel40";
-            this.flowLayoutPanel40.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel40.TabIndex = 0;
-            // 
-            // panel92
-            // 
-            this.panel92.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel92.Controls.Add(this.flowLayoutPanel39);
-            this.panel92.Location = new System.Drawing.Point(698, 1132);
-            this.panel92.Name = "panel92";
-            this.panel92.Size = new System.Drawing.Size(10, 179);
-            this.panel92.TabIndex = 7;
-            // 
-            // flowLayoutPanel39
-            // 
-            this.flowLayoutPanel39.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel39.Name = "flowLayoutPanel39";
-            this.flowLayoutPanel39.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel39.TabIndex = 0;
-            // 
-            // panel91
-            // 
-            this.panel91.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel91.Location = new System.Drawing.Point(698, 1311);
-            this.panel91.Name = "panel91";
-            this.panel91.Size = new System.Drawing.Size(344, 12);
-            this.panel91.TabIndex = 8;
-            // 
-            // panel90
-            // 
-            this.panel90.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel90.Controls.Add(this.flowLayoutPanel38);
-            this.panel90.Location = new System.Drawing.Point(1035, 1144);
-            this.panel90.Name = "panel90";
-            this.panel90.Size = new System.Drawing.Size(10, 179);
-            this.panel90.TabIndex = 9;
-            // 
-            // flowLayoutPanel38
-            // 
-            this.flowLayoutPanel38.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel38.Name = "flowLayoutPanel38";
-            this.flowLayoutPanel38.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel38.TabIndex = 0;
-            // 
-            // panel89
-            // 
-            this.panel89.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel89.Controls.Add(this.flowLayoutPanel37);
-            this.panel89.Location = new System.Drawing.Point(1701, 1163);
-            this.panel89.Name = "panel89";
-            this.panel89.Size = new System.Drawing.Size(10, 372);
-            this.panel89.TabIndex = 10;
-            // 
-            // flowLayoutPanel37
-            // 
-            this.flowLayoutPanel37.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel37.Name = "flowLayoutPanel37";
-            this.flowLayoutPanel37.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel37.TabIndex = 0;
-            // 
-            // panel88
-            // 
-            this.panel88.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel88.Controls.Add(this.flowLayoutPanel36);
-            this.panel88.Location = new System.Drawing.Point(1040, 276);
-            this.panel88.Name = "panel88";
-            this.panel88.Size = new System.Drawing.Size(10, 317);
-            this.panel88.TabIndex = 11;
-            // 
-            // flowLayoutPanel36
-            // 
-            this.flowLayoutPanel36.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel36.Name = "flowLayoutPanel36";
-            this.flowLayoutPanel36.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel36.TabIndex = 0;
-            // 
-            // panel87
-            // 
-            this.panel87.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel87.Location = new System.Drawing.Point(1676, 1160);
-            this.panel87.Name = "panel87";
-            this.panel87.Size = new System.Drawing.Size(194, 12);
-            this.panel87.TabIndex = 12;
-            // 
-            // panel86
-            // 
-            this.panel86.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel86.Controls.Add(this.flowLayoutPanel35);
-            this.panel86.Location = new System.Drawing.Point(1973, 930);
-            this.panel86.Name = "panel86";
-            this.panel86.Size = new System.Drawing.Size(10, 242);
-            this.panel86.TabIndex = 14;
-            // 
-            // flowLayoutPanel35
-            // 
-            this.flowLayoutPanel35.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel35.Name = "flowLayoutPanel35";
-            this.flowLayoutPanel35.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel35.TabIndex = 0;
-            // 
-            // panel85
-            // 
-            this.panel85.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel85.Controls.Add(this.flowLayoutPanel34);
-            this.panel85.Location = new System.Drawing.Point(1445, 937);
-            this.panel85.Name = "panel85";
-            this.panel85.Size = new System.Drawing.Size(10, 197);
-            this.panel85.TabIndex = 15;
-            // 
-            // flowLayoutPanel34
-            // 
-            this.flowLayoutPanel34.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel34.Name = "flowLayoutPanel34";
-            this.flowLayoutPanel34.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel34.TabIndex = 0;
-            // 
-            // panel84
-            // 
-            this.panel84.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel84.Location = new System.Drawing.Point(1448, 932);
-            this.panel84.Name = "panel84";
-            this.panel84.Size = new System.Drawing.Size(236, 10);
-            this.panel84.TabIndex = 16;
-            // 
-            // panel83
-            // 
-            this.panel83.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel83.Location = new System.Drawing.Point(656, 293);
-            this.panel83.Name = "panel83";
-            this.panel83.Size = new System.Drawing.Size(394, 10);
-            this.panel83.TabIndex = 17;
-            // 
-            // panel82
-            // 
-            this.panel82.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel82.Location = new System.Drawing.Point(688, 575);
-            this.panel82.Name = "panel82";
-            this.panel82.Size = new System.Drawing.Size(357, 10);
-            this.panel82.TabIndex = 18;
-            // 
-            // panel81
-            // 
-            this.panel81.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel81.Location = new System.Drawing.Point(836, 591);
-            this.panel81.Name = "panel81";
-            this.panel81.Size = new System.Drawing.Size(211, 10);
-            this.panel81.TabIndex = 19;
-            // 
-            // panel80
-            // 
-            this.panel80.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel80.Location = new System.Drawing.Point(1674, 935);
-            this.panel80.Name = "panel80";
-            this.panel80.Size = new System.Drawing.Size(19, 173);
-            this.panel80.TabIndex = 20;
-            // 
-            // panel79
-            // 
-            this.panel79.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel79.Location = new System.Drawing.Point(1207, 1144);
-            this.panel79.Name = "panel79";
-            this.panel79.Size = new System.Drawing.Size(12, 250);
-            this.panel79.TabIndex = 21;
-            // 
-            // panel78
-            // 
-            this.panel78.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel78.Location = new System.Drawing.Point(711, 952);
-            this.panel78.Name = "panel78";
-            this.panel78.Size = new System.Drawing.Size(394, 10);
-            this.panel78.TabIndex = 22;
-            // 
-            // panel77
-            // 
-            this.panel77.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel77.Location = new System.Drawing.Point(1459, 1144);
-            this.panel77.Name = "panel77";
-            this.panel77.Size = new System.Drawing.Size(10, 254);
-            this.panel77.TabIndex = 23;
-            // 
-            // panel76
-            // 
-            this.panel76.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel76.Location = new System.Drawing.Point(1212, 1384);
-            this.panel76.Name = "panel76";
-            this.panel76.Size = new System.Drawing.Size(254, 10);
-            this.panel76.TabIndex = 24;
-            // 
-            // panel75
-            // 
-            this.panel75.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel75.Controls.Add(this.flowLayoutPanel32);
-            this.panel75.Location = new System.Drawing.Point(1760, 725);
-            this.panel75.Name = "panel75";
-            this.panel75.Size = new System.Drawing.Size(10, 140);
-            this.panel75.TabIndex = 25;
-            // 
-            // flowLayoutPanel32
-            // 
-            this.flowLayoutPanel32.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel32.Name = "flowLayoutPanel32";
-            this.flowLayoutPanel32.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel32.TabIndex = 0;
-            // 
-            // panel74
-            // 
-            this.panel74.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel74.Location = new System.Drawing.Point(2026, 1176);
-            this.panel74.Name = "panel74";
-            this.panel74.Size = new System.Drawing.Size(10, 171);
-            this.panel74.TabIndex = 26;
-            // 
-            // panel73
-            // 
-            this.panel73.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel73.Location = new System.Drawing.Point(2005, 1169);
-            this.panel73.Name = "panel73";
-            this.panel73.Size = new System.Drawing.Size(333, 10);
-            this.panel73.TabIndex = 27;
-            // 
-            // panel72
-            // 
-            this.panel72.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel72.Controls.Add(this.flowLayoutPanel31);
-            this.panel72.Location = new System.Drawing.Point(2478, 1176);
-            this.panel72.Name = "panel72";
-            this.panel72.Size = new System.Drawing.Size(10, 359);
-            this.panel72.TabIndex = 29;
-            // 
-            // flowLayoutPanel31
-            // 
-            this.flowLayoutPanel31.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel31.Name = "flowLayoutPanel31";
-            this.flowLayoutPanel31.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel31.TabIndex = 0;
-            // 
-            // panel71
-            // 
-            this.panel71.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel71.Controls.Add(this.flowLayoutPanel30);
-            this.panel71.Location = new System.Drawing.Point(2338, 1176);
-            this.panel71.Name = "panel71";
-            this.panel71.Size = new System.Drawing.Size(10, 177);
-            this.panel71.TabIndex = 28;
-            // 
-            // flowLayoutPanel30
-            // 
-            this.flowLayoutPanel30.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel30.Name = "flowLayoutPanel30";
-            this.flowLayoutPanel30.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel30.TabIndex = 0;
-            // 
-            // panel70
-            // 
-            this.panel70.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel70.Location = new System.Drawing.Point(2513, 1185);
-            this.panel70.Name = "panel70";
-            this.panel70.Size = new System.Drawing.Size(129, 12);
-            this.panel70.TabIndex = 30;
-            // 
-            // panel69
-            // 
-            this.panel69.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel69.Location = new System.Drawing.Point(1301, 1129);
-            this.panel69.Name = "panel69";
-            this.panel69.Size = new System.Drawing.Size(188, 11);
-            this.panel69.TabIndex = 32;
-            // 
-            // panel68
-            // 
-            this.panel68.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel68.Controls.Add(this.flowLayoutPanel28);
-            this.panel68.Location = new System.Drawing.Point(2338, 1345);
-            this.panel68.Name = "panel68";
-            this.panel68.Size = new System.Drawing.Size(10, 154);
-            this.panel68.TabIndex = 33;
-            // 
-            // flowLayoutPanel28
-            // 
-            this.flowLayoutPanel28.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel28.Name = "flowLayoutPanel28";
-            this.flowLayoutPanel28.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel28.TabIndex = 0;
-            // 
-            // panel67
-            // 
-            this.panel67.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel67.Location = new System.Drawing.Point(2626, 1185);
-            this.panel67.Name = "panel67";
-            this.panel67.Size = new System.Drawing.Size(233, 12);
-            this.panel67.TabIndex = 34;
-            // 
-            // panel66
-            // 
-            this.panel66.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel66.Controls.Add(this.flowLayoutPanel27);
-            this.panel66.Location = new System.Drawing.Point(1976, 710);
-            this.panel66.Name = "panel66";
-            this.panel66.Size = new System.Drawing.Size(10, 232);
-            this.panel66.TabIndex = 35;
-            // 
-            // flowLayoutPanel27
-            // 
-            this.flowLayoutPanel27.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel27.Name = "flowLayoutPanel27";
-            this.flowLayoutPanel27.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel27.TabIndex = 0;
-            // 
-            // panel64
-            // 
-            this.panel64.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel64.Controls.Add(this.panel65);
-            this.panel64.Location = new System.Drawing.Point(1763, 722);
-            this.panel64.Name = "panel64";
-            this.panel64.Size = new System.Drawing.Size(225, 10);
-            this.panel64.TabIndex = 36;
-            // 
-            // panel65
-            // 
-            this.panel65.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel65.Controls.Add(this.flowLayoutPanel26);
-            this.panel65.Location = new System.Drawing.Point(693, 11);
-            this.panel65.Name = "panel65";
-            this.panel65.Size = new System.Drawing.Size(14, 173);
-            this.panel65.TabIndex = 25;
-            // 
-            // flowLayoutPanel26
-            // 
-            this.flowLayoutPanel26.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel26.Name = "flowLayoutPanel26";
-            this.flowLayoutPanel26.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel26.TabIndex = 0;
-            // 
-            // panel62
-            // 
-            this.panel62.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel62.Controls.Add(this.panel63);
-            this.panel62.Location = new System.Drawing.Point(1448, 719);
-            this.panel62.Name = "panel62";
-            this.panel62.Size = new System.Drawing.Size(319, 13);
-            this.panel62.TabIndex = 38;
-            // 
-            // panel63
-            // 
-            this.panel63.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel63.Controls.Add(this.flowLayoutPanel25);
-            this.panel63.Location = new System.Drawing.Point(693, 11);
-            this.panel63.Name = "panel63";
-            this.panel63.Size = new System.Drawing.Size(14, 173);
-            this.panel63.TabIndex = 25;
-            // 
-            // flowLayoutPanel25
-            // 
-            this.flowLayoutPanel25.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel25.Name = "flowLayoutPanel25";
-            this.flowLayoutPanel25.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel25.TabIndex = 0;
+            // label67
+            // 
+            this.label67.BackColor = System.Drawing.Color.Black;
+            this.label67.Location = new System.Drawing.Point(656, 306);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(180, 107);
+            this.label67.TabIndex = 116;
+            this.label67.Text = "Sir Syed Hall";
+            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label66
+            // 
+            this.label66.BackColor = System.Drawing.Color.Black;
+            this.label66.Location = new System.Drawing.Point(842, 304);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(194, 109);
+            this.label66.TabIndex = 115;
+            this.label66.Text = "Iqbal Hall";
+            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label65
+            // 
+            this.label65.BackColor = System.Drawing.Color.Black;
+            this.label65.Location = new System.Drawing.Point(699, 85);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(338, 206);
+            this.label65.TabIndex = 114;
+            this.label65.Text = "B- Colony";
+            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label64
+            // 
+            this.label64.BackColor = System.Drawing.Color.Black;
+            this.label64.Location = new System.Drawing.Point(691, 460);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(139, 111);
+            this.label64.TabIndex = 113;
+            this.label64.Text = "Quaid-e-Azam Hall";
+            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label63
+            // 
+            this.label63.BackColor = System.Drawing.Color.Black;
+            this.label63.Location = new System.Drawing.Point(836, 461);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(196, 111);
+            this.label63.TabIndex = 112;
+            this.label63.Text = "Liaqat Hall";
+            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label62
+            // 
+            this.label62.BackColor = System.Drawing.Color.Black;
+            this.label62.Location = new System.Drawing.Point(559, 534);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(123, 84);
+            this.label62.TabIndex = 111;
+            this.label62.Text = "Q Canteen";
+            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label61
+            // 
+            this.label61.BackColor = System.Drawing.Color.Black;
+            this.label61.Location = new System.Drawing.Point(728, 791);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(195, 154);
+            this.label61.TabIndex = 110;
+            this.label61.Text = "Zubair Hall";
+            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label60
+            // 
+            this.label60.BackColor = System.Drawing.Color.Black;
+            this.label60.Location = new System.Drawing.Point(929, 828);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(160, 121);
+            this.label60.TabIndex = 109;
+            this.label60.Text = "Shopping Centre";
+            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label59
+            // 
+            this.label59.BackColor = System.Drawing.Color.Black;
+            this.label59.Location = new System.Drawing.Point(753, 605);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(272, 108);
+            this.label59.TabIndex = 108;
+            this.label59.Text = "Mumtaz Hall";
+            this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label58
+            // 
+            this.label58.BackColor = System.Drawing.Color.Black;
+            this.label58.Location = new System.Drawing.Point(1053, 529);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(159, 74);
+            this.label58.TabIndex = 107;
+            this.label58.Text = "Sports Complex";
+            this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label57
+            // 
+            this.label57.BackColor = System.Drawing.Color.Black;
+            this.label57.Location = new System.Drawing.Point(1187, 606);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(201, 109);
+            this.label57.TabIndex = 106;
+            this.label57.Text = "Bhola Cafe";
+            this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label56
+            // 
+            this.label56.BackColor = System.Drawing.Color.Black;
+            this.label56.Location = new System.Drawing.Point(1052, 606);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(130, 111);
+            this.label56.TabIndex = 105;
+            this.label56.Text = "Security Office";
+            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label55
+            // 
+            this.label55.BackColor = System.Drawing.Color.Black;
+            this.label55.Location = new System.Drawing.Point(1989, 843);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(100, 111);
+            this.label55.TabIndex = 104;
+            this.label55.Text = "Post Office";
+            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label54
+            // 
+            this.label54.BackColor = System.Drawing.Color.Black;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(1868, 273);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(508, 440);
+            this.label54.TabIndex = 103;
+            this.label54.Text = "Staff Colony";
+            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label53
+            // 
+            this.label53.BackColor = System.Drawing.Color.Black;
+            this.label53.Location = new System.Drawing.Point(1737, 623);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(126, 96);
+            this.label53.TabIndex = 102;
+            this.label53.Text = "Colony Gate 2";
+            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label52
+            // 
+            this.label52.BackColor = System.Drawing.Color.Black;
+            this.label52.Location = new System.Drawing.Point(1458, 820);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(156, 108);
+            this.label52.TabIndex = 101;
+            this.label52.Text = "Metallurgy dept";
+            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label51
+            // 
+            this.label51.BackColor = System.Drawing.Color.Black;
+            this.label51.Location = new System.Drawing.Point(1620, 820);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(133, 108);
+            this.label51.TabIndex = 100;
+            this.label51.Text = "Polymer Dept";
+            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label50
+            // 
+            this.label50.BackColor = System.Drawing.Color.Black;
+            this.label50.Location = new System.Drawing.Point(1771, 739);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(101, 182);
+            this.label50.TabIndex = 99;
+            this.label50.Text = "Geo- logical dept";
+            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label49
+            // 
+            this.label49.BackColor = System.Drawing.Color.Black;
+            this.label49.Location = new System.Drawing.Point(1459, 735);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(158, 83);
+            this.label49.TabIndex = 98;
+            this.label49.Text = "Data Science";
+            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label48
+            // 
+            this.label48.BackColor = System.Drawing.Color.Black;
+            this.label48.Location = new System.Drawing.Point(1620, 735);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(136, 83);
+            this.label48.TabIndex = 97;
+            this.label48.Text = "Chemical Dept";
+            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label47
+            // 
+            this.label47.BackColor = System.Drawing.Color.Black;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(1868, 739);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(106, 182);
+            this.label47.TabIndex = 96;
+            this.label47.Text = "Mining Dept";
+            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label46
+            // 
+            this.label46.BackColor = System.Drawing.Color.Black;
+            this.label46.Location = new System.Drawing.Point(1568, 963);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(100, 154);
+            this.label46.TabIndex = 95;
+            this.label46.Text = "Archi. Dept";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label45
+            // 
+            this.label45.BackColor = System.Drawing.Color.Black;
+            this.label45.Location = new System.Drawing.Point(1460, 968);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(100, 154);
+            this.label45.TabIndex = 94;
+            this.label45.Text = "CRP Dept";
+            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label44
+            // 
+            this.label44.BackColor = System.Drawing.Color.Black;
+            this.label44.Location = new System.Drawing.Point(1219, 1010);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(220, 109);
+            this.label44.TabIndex = 93;
+            this.label44.Text = "Parking Office";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label43
+            // 
+            this.label43.BackColor = System.Drawing.Color.Black;
+            this.label43.Location = new System.Drawing.Point(747, 965);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(176, 74);
+            this.label43.TabIndex = 92;
+            this.label43.Text = "MBQ Hall";
+            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label42
+            // 
+            this.label42.BackColor = System.Drawing.Color.Black;
+            this.label42.Location = new System.Drawing.Point(608, 897);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(100, 105);
+            this.label42.TabIndex = 91;
+            this.label42.Text = "Edhi Hall";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label41
+            // 
+            this.label41.BackColor = System.Drawing.Color.Black;
+            this.label41.Location = new System.Drawing.Point(725, 1041);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(123, 86);
+            this.label41.TabIndex = 90;
+            this.label41.Text = "Khalid Hall";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label40
+            // 
+            this.label40.BackColor = System.Drawing.Color.Black;
+            this.label40.Location = new System.Drawing.Point(854, 1040);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(130, 86);
+            this.label40.TabIndex = 89;
+            this.label40.Text = "Tariq Hall";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label39
+            // 
+            this.label39.BackColor = System.Drawing.Color.Black;
+            this.label39.Location = new System.Drawing.Point(990, 968);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(100, 154);
+            this.label39.TabIndex = 88;
+            this.label39.Text = "SSC";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label38
+            // 
+            this.label38.BackColor = System.Drawing.Color.Black;
+            this.label38.Location = new System.Drawing.Point(1103, 731);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(338, 266);
+            this.label38.TabIndex = 87;
+            this.label38.Text = "Football Ground";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label37
+            // 
+            this.label37.BackColor = System.Drawing.Color.Black;
+            this.label37.Location = new System.Drawing.Point(1394, 308);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(339, 410);
+            this.label37.TabIndex = 86;
+            this.label37.Text = "JJ Cricket Ground";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label36
+            // 
+            this.label36.BackColor = System.Drawing.Color.Black;
+            this.label36.Location = new System.Drawing.Point(570, 1250);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(126, 85);
+            this.label36.TabIndex = 85;
+            this.label36.Text = "Annexe";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label35
+            // 
+            this.label35.BackColor = System.Drawing.Color.Black;
+            this.label35.Location = new System.Drawing.Point(712, 1324);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(161, 123);
+            this.label35.TabIndex = 84;
+            this.label35.Text = "Chem. Dept /   Workshop";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label34
+            // 
+            this.label34.BackColor = System.Drawing.Color.Black;
+            this.label34.Location = new System.Drawing.Point(876, 1323);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(161, 91);
+            this.label34.TabIndex = 83;
+            this.label34.Text = "Automotive dept.";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label33
+            // 
+            this.label33.BackColor = System.Drawing.Color.Black;
+            this.label33.Location = new System.Drawing.Point(1048, 1146);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(158, 124);
+            this.label33.TabIndex = 82;
+            this.label33.Text = "IBM";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label32
+            // 
+            this.label32.BackColor = System.Drawing.Color.Black;
+            this.label32.Location = new System.Drawing.Point(711, 1142);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(321, 169);
+            this.label32.TabIndex = 81;
+            this.label32.Text = "Annexe Ground";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label31
+            // 
+            this.label31.BackColor = System.Drawing.Color.Black;
+            this.label31.Location = new System.Drawing.Point(1181, 1543);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(100, 60);
+            this.label31.TabIndex = 80;
+            this.label31.Text = "HBL ";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label30
+            // 
+            this.label30.BackColor = System.Drawing.Color.Black;
+            this.label30.Location = new System.Drawing.Point(1225, 1396);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(123, 131);
+            this.label30.TabIndex = 79;
+            this.label30.Text = "Admin Block";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label29
+            // 
+            this.label29.BackColor = System.Drawing.Color.Black;
+            this.label29.Location = new System.Drawing.Point(1354, 1395);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(103, 131);
+            this.label29.TabIndex = 78;
+            this.label29.Text = "VC Office";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label28
+            // 
+            this.label28.BackColor = System.Drawing.Color.Black;
+            this.label28.Location = new System.Drawing.Point(1326, 1291);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(127, 89);
+            this.label28.TabIndex = 77;
+            this.label28.Text = "Islamiyat  Dept";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label27
+            // 
+            this.label27.BackColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(1224, 1291);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(105, 86);
+            this.label27.TabIndex = 76;
+            this.label27.Text = "Archi. Eng.";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label26
+            // 
+            this.label26.BackColor = System.Drawing.Color.Black;
+            this.label26.Location = new System.Drawing.Point(1225, 1143);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(230, 144);
+            this.label26.TabIndex = 75;
+            this.label26.Text = "Jamia Masjid";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label25
+            // 
+            this.label25.BackColor = System.Drawing.Color.Black;
+            this.label25.Location = new System.Drawing.Point(1685, 948);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(68, 179);
+            this.label25.TabIndex = 74;
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label24
+            // 
+            this.label24.BackColor = System.Drawing.Color.Black;
+            this.label24.Location = new System.Drawing.Point(1716, 951);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(256, 72);
+            this.label24.TabIndex = 73;
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label23
+            // 
+            this.label23.BackColor = System.Drawing.Color.Black;
+            this.label23.Location = new System.Drawing.Point(1499, 1383);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(173, 106);
+            this.label23.TabIndex = 72;
+            this.label23.Text = "Electrical dept.";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label22
+            // 
+            this.label22.BackColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(1475, 1139);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(197, 95);
+            this.label22.TabIndex = 71;
+            this.label22.Text = "Library";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label21
+            // 
+            this.label21.BackColor = System.Drawing.Color.Black;
+            this.label21.Location = new System.Drawing.Point(1475, 1242);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(197, 135);
+            this.label21.TabIndex = 70;
+            this.label21.Text = "Lalazar";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label20
+            // 
+            this.label20.BackColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(1717, 1177);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(203, 91);
+            this.label20.TabIndex = 69;
+            this.label20.Text = "CS Dept.";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            this.label19.BackColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(1926, 1188);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(100, 78);
+            this.label19.TabIndex = 68;
+            this.label19.Text = "Math Dept";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.Color.Black;
+            this.label18.Location = new System.Drawing.Point(1926, 1296);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(100, 86);
+            this.label18.TabIndex = 67;
+            this.label18.Text = "KICS";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            this.label17.BackColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(2036, 1441);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(111, 106);
+            this.label17.TabIndex = 66;
+            this.label17.Text = "Mecha-tronics Dept";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label16
+            // 
+            this.label16.BackColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(2036, 1319);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(100, 106);
+            this.label16.TabIndex = 65;
+            this.label16.Text = "Mech. Dept";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label15
+            // 
+            this.label15.BackColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(2036, 1192);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(100, 111);
+            this.label15.TabIndex = 64;
+            this.label15.Text = "CE Dept";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(1983, 1084);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(111, 83);
+            this.label14.TabIndex = 63;
+            this.label14.Text = "GSSC";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(1842, 1021);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(130, 137);
+            this.label13.TabIndex = 62;
+            this.label13.Text = "Trans- portation dept";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(2167, 1179);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(170, 156);
+            this.label12.TabIndex = 61;
+            this.label12.Text = "Auditorium";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(2354, 1364);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(123, 83);
+            this.label11.TabIndex = 60;
+            this.label11.Text = "Physics Dept";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(1739, 951);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(103, 208);
+            this.label10.TabIndex = 59;
+            this.label10.Text = "Civil Dept.";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(2399, 1076);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(174, 91);
+            this.label9.TabIndex = 58;
+            this.label9.Text = "Khadija Hall";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(2587, 1085);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(225, 101);
+            this.label8.TabIndex = 57;
+            this.label8.Text = "Faculty Hostel";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(2593, 1197);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(258, 329);
+            this.label7.TabIndex = 56;
+            this.label7.Text = "Girls Ground";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(2861, 1176);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(100, 218);
+            this.label6.TabIndex = 55;
+            this.label6.Text = "Girls Hostel";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel107
+            // 
+            this.panel107.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel107.Location = new System.Drawing.Point(2026, 1345);
+            this.panel107.Name = "panel107";
+            this.panel107.Size = new System.Drawing.Size(10, 171);
+            this.panel107.TabIndex = 53;
+            // 
+            // panel106
+            // 
+            this.panel106.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel106.Location = new System.Drawing.Point(1597, 1127);
+            this.panel106.Name = "panel106";
+            this.panel106.Size = new System.Drawing.Size(124, 10);
+            this.panel106.TabIndex = 52;
+            // 
+            // panel105
+            // 
+            this.panel105.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel105.Location = new System.Drawing.Point(1467, 1128);
+            this.panel105.Name = "panel105";
+            this.panel105.Size = new System.Drawing.Size(124, 10);
+            this.panel105.TabIndex = 51;
+            // 
+            // panel104
+            // 
+            this.panel104.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel104.Location = new System.Drawing.Point(1684, 940);
+            this.panel104.Name = "panel104";
+            this.panel104.Size = new System.Drawing.Size(291, 10);
+            this.panel104.TabIndex = 50;
+            // 
+            // panel103
+            // 
+            this.panel103.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel103.Controls.Add(this.flowLayoutPanel44);
+            this.panel103.Location = new System.Drawing.Point(1673, 1417);
+            this.panel103.Name = "panel103";
+            this.panel103.Size = new System.Drawing.Size(10, 118);
+            this.panel103.TabIndex = 49;
+            // 
+            // flowLayoutPanel44
+            // 
+            this.flowLayoutPanel44.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel44.Name = "flowLayoutPanel44";
+            this.flowLayoutPanel44.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel44.TabIndex = 0;
+            // 
+            // panel102
+            // 
+            this.panel102.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel102.Location = new System.Drawing.Point(1674, 1290);
+            this.panel102.Name = "panel102";
+            this.panel102.Size = new System.Drawing.Size(10, 131);
+            this.panel102.TabIndex = 48;
+            // 
+            // panel101
+            // 
+            this.panel101.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel101.Location = new System.Drawing.Point(2344, 1166);
+            this.panel101.Name = "panel101";
+            this.panel101.Size = new System.Drawing.Size(136, 10);
+            this.panel101.TabIndex = 47;
+            // 
+            // panel52
+            // 
+            this.panel52.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel52.Location = new System.Drawing.Point(1856, 1166);
+            this.panel52.Name = "panel52";
+            this.panel52.Size = new System.Drawing.Size(150, 10);
+            this.panel52.TabIndex = 46;
+            // 
+            // panel53
+            // 
+            this.panel53.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel53.Location = new System.Drawing.Point(1459, 1389);
+            this.panel53.Name = "panel53";
+            this.panel53.Size = new System.Drawing.Size(10, 145);
+            this.panel53.TabIndex = 45;
+            // 
+            // panel54
+            // 
+            this.panel54.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel54.Location = new System.Drawing.Point(1207, 1384);
+            this.panel54.Name = "panel54";
+            this.panel54.Size = new System.Drawing.Size(12, 151);
+            this.panel54.TabIndex = 44;
+            // 
+            // panel55
+            // 
+            this.panel55.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel55.Location = new System.Drawing.Point(1210, 1128);
+            this.panel55.Name = "panel55";
+            this.panel55.Size = new System.Drawing.Size(97, 17);
+            this.panel55.TabIndex = 43;
+            // 
+            // panel56
+            // 
+            this.panel56.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel56.Location = new System.Drawing.Point(1012, 1128);
+            this.panel56.Name = "panel56";
+            this.panel56.Size = new System.Drawing.Size(93, 15);
+            this.panel56.TabIndex = 42;
+            // 
+            // panel57
+            // 
+            this.panel57.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel57.Location = new System.Drawing.Point(1092, 733);
+            this.panel57.Name = "panel57";
+            this.panel57.Size = new System.Drawing.Size(10, 230);
+            this.panel57.TabIndex = 41;
+            // 
+            // panel58
+            // 
+            this.panel58.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel58.Controls.Add(this.flowLayoutPanel2);
+            this.panel58.Location = new System.Drawing.Point(1037, 589);
+            this.panel58.Name = "panel58";
+            this.panel58.Size = new System.Drawing.Size(10, 145);
+            this.panel58.TabIndex = 40;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel2.TabIndex = 0;
+            // 
+            // panel59
+            // 
+            this.panel59.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel59.Controls.Add(this.flowLayoutPanel11);
+            this.panel59.Location = new System.Drawing.Point(1445, 730);
+            this.panel59.Name = "panel59";
+            this.panel59.Size = new System.Drawing.Size(10, 207);
+            this.panel59.TabIndex = 39;
+            // 
+            // flowLayoutPanel11
+            // 
+            this.flowLayoutPanel11.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel11.Name = "flowLayoutPanel11";
+            this.flowLayoutPanel11.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel11.TabIndex = 0;
             // 
             // panel60
             // 
@@ -1619,770 +1954,449 @@
             this.flowLayoutPanel12.Size = new System.Drawing.Size(38, 8);
             this.flowLayoutPanel12.TabIndex = 0;
             // 
-            // panel59
-            // 
-            this.panel59.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel59.Controls.Add(this.flowLayoutPanel11);
-            this.panel59.Location = new System.Drawing.Point(1445, 730);
-            this.panel59.Name = "panel59";
-            this.panel59.Size = new System.Drawing.Size(10, 207);
-            this.panel59.TabIndex = 39;
+            // panel62
+            // 
+            this.panel62.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel62.Controls.Add(this.panel63);
+            this.panel62.Location = new System.Drawing.Point(1448, 719);
+            this.panel62.Name = "panel62";
+            this.panel62.Size = new System.Drawing.Size(319, 13);
+            this.panel62.TabIndex = 38;
             // 
-            // flowLayoutPanel11
-            // 
-            this.flowLayoutPanel11.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel11.Name = "flowLayoutPanel11";
-            this.flowLayoutPanel11.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel11.TabIndex = 0;
+            // panel63
+            // 
+            this.panel63.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel63.Controls.Add(this.flowLayoutPanel25);
+            this.panel63.Location = new System.Drawing.Point(693, 11);
+            this.panel63.Name = "panel63";
+            this.panel63.Size = new System.Drawing.Size(14, 173);
+            this.panel63.TabIndex = 25;
+            // 
+            // flowLayoutPanel25
+            // 
+            this.flowLayoutPanel25.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel25.Name = "flowLayoutPanel25";
+            this.flowLayoutPanel25.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel25.TabIndex = 0;
             // 
-            // panel58
-            // 
-            this.panel58.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel58.Controls.Add(this.flowLayoutPanel2);
-            this.panel58.Location = new System.Drawing.Point(1037, 589);
-            this.panel58.Name = "panel58";
-            this.panel58.Size = new System.Drawing.Size(10, 145);
-            this.panel58.TabIndex = 40;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel2.TabIndex = 0;
-            // 
-            // panel57
-            // 
-            this.panel57.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel57.Location = new System.Drawing.Point(1092, 733);
-            this.panel57.Name = "panel57";
-            this.panel57.Size = new System.Drawing.Size(10, 230);
-            this.panel57.TabIndex = 41;
-            // 
-            // panel56
-            // 
-            this.panel56.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel56.Location = new System.Drawing.Point(1012, 1128);
-            this.panel56.Name = "panel56";
-            this.panel56.Size = new System.Drawing.Size(93, 15);
-            this.panel56.TabIndex = 42;
-            // 
-            // panel55
-            // 
-            this.panel55.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel55.Location = new System.Drawing.Point(1210, 1128);
-            this.panel55.Name = "panel55";
-            this.panel55.Size = new System.Drawing.Size(97, 17);
-            this.panel55.TabIndex = 43;
-            // 
-            // panel54
-            // 
-            this.panel54.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel54.Location = new System.Drawing.Point(1207, 1384);
-            this.panel54.Name = "panel54";
-            this.panel54.Size = new System.Drawing.Size(12, 151);
-            this.panel54.TabIndex = 44;
-            // 
-            // panel53
-            // 
-            this.panel53.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel53.Location = new System.Drawing.Point(1459, 1389);
-            this.panel53.Name = "panel53";
-            this.panel53.Size = new System.Drawing.Size(10, 145);
-            this.panel53.TabIndex = 45;
-            // 
-            // panel52
-            // 
-            this.panel52.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel52.Location = new System.Drawing.Point(1856, 1166);
-            this.panel52.Name = "panel52";
-            this.panel52.Size = new System.Drawing.Size(150, 10);
-            this.panel52.TabIndex = 46;
-            // 
-            // panel101
-            // 
-            this.panel101.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel101.Location = new System.Drawing.Point(2344, 1166);
-            this.panel101.Name = "panel101";
-            this.panel101.Size = new System.Drawing.Size(136, 10);
-            this.panel101.TabIndex = 47;
-            // 
-            // panel102
-            // 
-            this.panel102.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel102.Location = new System.Drawing.Point(1674, 1290);
-            this.panel102.Name = "panel102";
-            this.panel102.Size = new System.Drawing.Size(10, 131);
-            this.panel102.TabIndex = 48;
-            // 
-            // panel103
-            // 
-            this.panel103.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel103.Controls.Add(this.flowLayoutPanel44);
-            this.panel103.Location = new System.Drawing.Point(1673, 1417);
-            this.panel103.Name = "panel103";
-            this.panel103.Size = new System.Drawing.Size(10, 118);
-            this.panel103.TabIndex = 49;
-            // 
-            // flowLayoutPanel44
-            // 
-            this.flowLayoutPanel44.Location = new System.Drawing.Point(0, 126);
-            this.flowLayoutPanel44.Name = "flowLayoutPanel44";
-            this.flowLayoutPanel44.Size = new System.Drawing.Size(38, 8);
-            this.flowLayoutPanel44.TabIndex = 0;
-            // 
-            // panel104
-            // 
-            this.panel104.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel104.Location = new System.Drawing.Point(1684, 940);
-            this.panel104.Name = "panel104";
-            this.panel104.Size = new System.Drawing.Size(291, 10);
-            this.panel104.TabIndex = 50;
-            // 
-            // panel105
-            // 
-            this.panel105.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel105.Location = new System.Drawing.Point(1467, 1128);
-            this.panel105.Name = "panel105";
-            this.panel105.Size = new System.Drawing.Size(124, 10);
-            this.panel105.TabIndex = 51;
-            // 
-            // panel106
-            // 
-            this.panel106.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel106.Location = new System.Drawing.Point(1597, 1127);
-            this.panel106.Name = "panel106";
-            this.panel106.Size = new System.Drawing.Size(124, 10);
-            this.panel106.TabIndex = 52;
-            // 
-            // panel107
-            // 
-            this.panel107.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel107.Location = new System.Drawing.Point(2026, 1345);
-            this.panel107.Name = "panel107";
-            this.panel107.Size = new System.Drawing.Size(10, 171);
-            this.panel107.TabIndex = 53;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(2861, 1176);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 218);
-            this.label6.TabIndex = 55;
-            this.label6.Text = "Girls Hostel";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(2593, 1197);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(258, 329);
-            this.label7.TabIndex = 56;
-            this.label7.Text = "Girls Ground";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(2587, 1085);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(225, 101);
-            this.label8.TabIndex = 57;
-            this.label8.Text = "Faculty Hostel";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(2399, 1076);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(174, 91);
-            this.label9.TabIndex = 58;
-            this.label9.Text = "Khadija Hall";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(1739, 951);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(103, 208);
-            this.label10.TabIndex = 59;
-            this.label10.Text = "Civil Dept.";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(2354, 1364);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(123, 83);
-            this.label11.TabIndex = 60;
-            this.label11.Text = "Physics Dept";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            this.label12.BackColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(2167, 1179);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(170, 156);
-            this.label12.TabIndex = 61;
-            this.label12.Text = "Auditorium";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label13
-            // 
-            this.label13.BackColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(1842, 1021);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(130, 137);
-            this.label13.TabIndex = 62;
-            this.label13.Text = "Trans- portation dept";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label14
-            // 
-            this.label14.BackColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(1983, 1084);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(111, 83);
-            this.label14.TabIndex = 63;
-            this.label14.Text = "GSSC";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label15
-            // 
-            this.label15.BackColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(2036, 1192);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(100, 111);
-            this.label15.TabIndex = 64;
-            this.label15.Text = "CE Dept";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label16
-            // 
-            this.label16.BackColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(2036, 1319);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(100, 106);
-            this.label16.TabIndex = 65;
-            this.label16.Text = "Mech. Dept";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            this.label17.BackColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(2036, 1441);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(111, 106);
-            this.label17.TabIndex = 66;
-            this.label17.Text = "Mecha-tronics Dept";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label18
-            // 
-            this.label18.BackColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(1926, 1296);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(100, 86);
-            this.label18.TabIndex = 67;
-            this.label18.Text = "KICS";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label19
-            // 
-            this.label19.BackColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(1926, 1188);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(100, 78);
-            this.label19.TabIndex = 68;
-            this.label19.Text = "Math Dept";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label20
-            // 
-            this.label20.BackColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(1717, 1177);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(203, 91);
-            this.label20.TabIndex = 69;
-            this.label20.Text = "CS Dept.";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label21
-            // 
-            this.label21.BackColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(1475, 1242);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(197, 135);
-            this.label21.TabIndex = 70;
-            this.label21.Text = "Lalazar";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label22
-            // 
-            this.label22.BackColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(1475, 1139);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(197, 95);
-            this.label22.TabIndex = 71;
-            this.label22.Text = "Library";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label23
-            // 
-            this.label23.BackColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(1499, 1383);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(173, 106);
-            this.label23.TabIndex = 72;
-            this.label23.Text = "Electrical dept.";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label24
-            // 
-            this.label24.BackColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(1716, 951);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(256, 72);
-            this.label24.TabIndex = 73;
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label25
-            // 
-            this.label25.BackColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(1685, 948);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(68, 179);
-            this.label25.TabIndex = 74;
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label26
-            // 
-            this.label26.BackColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(1225, 1143);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(230, 144);
-            this.label26.TabIndex = 75;
-            this.label26.Text = "Jamia Masjid";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label27
-            // 
-            this.label27.BackColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(1224, 1291);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(105, 86);
-            this.label27.TabIndex = 76;
-            this.label27.Text = "Archi. Eng.";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label28
-            // 
-            this.label28.BackColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(1326, 1291);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(127, 89);
-            this.label28.TabIndex = 77;
-            this.label28.Text = "Islamiyat  Dept";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label29
-            // 
-            this.label29.BackColor = System.Drawing.Color.Black;
-            this.label29.Location = new System.Drawing.Point(1354, 1395);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(103, 131);
-            this.label29.TabIndex = 78;
-            this.label29.Text = "VC Office";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label30
-            // 
-            this.label30.BackColor = System.Drawing.Color.Black;
-            this.label30.Location = new System.Drawing.Point(1225, 1396);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(123, 131);
-            this.label30.TabIndex = 79;
-            this.label30.Text = "Admin Block";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label31
-            // 
-            this.label31.BackColor = System.Drawing.Color.Black;
-            this.label31.Location = new System.Drawing.Point(1181, 1543);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(100, 60);
-            this.label31.TabIndex = 80;
-            this.label31.Text = "HBL ";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label32
-            // 
-            this.label32.BackColor = System.Drawing.Color.Black;
-            this.label32.Location = new System.Drawing.Point(711, 1142);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(321, 169);
-            this.label32.TabIndex = 81;
-            this.label32.Text = "Annexe Ground";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label33
-            // 
-            this.label33.BackColor = System.Drawing.Color.Black;
-            this.label33.Location = new System.Drawing.Point(1048, 1146);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(158, 124);
-            this.label33.TabIndex = 82;
-            this.label33.Text = "IBM";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label34
-            // 
-            this.label34.BackColor = System.Drawing.Color.Black;
-            this.label34.Location = new System.Drawing.Point(876, 1323);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(161, 91);
-            this.label34.TabIndex = 83;
-            this.label34.Text = "Automotive dept.";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label35
-            // 
-            this.label35.BackColor = System.Drawing.Color.Black;
-            this.label35.Location = new System.Drawing.Point(712, 1324);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(161, 123);
-            this.label35.TabIndex = 84;
-            this.label35.Text = "Chem. Dept /   Workshop";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label36
-            // 
-            this.label36.BackColor = System.Drawing.Color.Black;
-            this.label36.Location = new System.Drawing.Point(570, 1250);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(126, 85);
-            this.label36.TabIndex = 85;
-            this.label36.Text = "Annexe";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label37
-            // 
-            this.label37.BackColor = System.Drawing.Color.Black;
-            this.label37.Location = new System.Drawing.Point(1394, 308);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(339, 410);
-            this.label37.TabIndex = 86;
-            this.label37.Text = "JJ Cricket Ground";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label38
-            // 
-            this.label38.BackColor = System.Drawing.Color.Black;
-            this.label38.Location = new System.Drawing.Point(1103, 731);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(338, 266);
-            this.label38.TabIndex = 87;
-            this.label38.Text = "Football Ground";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label39
-            // 
-            this.label39.BackColor = System.Drawing.Color.Black;
-            this.label39.Location = new System.Drawing.Point(990, 968);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(100, 154);
-            this.label39.TabIndex = 88;
-            this.label39.Text = "SSC";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label40
-            // 
-            this.label40.BackColor = System.Drawing.Color.Black;
-            this.label40.Location = new System.Drawing.Point(854, 1040);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(130, 86);
-            this.label40.TabIndex = 89;
-            this.label40.Text = "Tariq Hall";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label41
-            // 
-            this.label41.BackColor = System.Drawing.Color.Black;
-            this.label41.Location = new System.Drawing.Point(725, 1041);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(123, 86);
-            this.label41.TabIndex = 90;
-            this.label41.Text = "Khalid Hall";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label42
-            // 
-            this.label42.BackColor = System.Drawing.Color.Black;
-            this.label42.Location = new System.Drawing.Point(608, 897);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(100, 105);
-            this.label42.TabIndex = 91;
-            this.label42.Text = "Edhi Hall";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label43
-            // 
-            this.label43.BackColor = System.Drawing.Color.Black;
-            this.label43.Location = new System.Drawing.Point(747, 965);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(176, 74);
-            this.label43.TabIndex = 92;
-            this.label43.Text = "MBQ Hall";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label44
-            // 
-            this.label44.BackColor = System.Drawing.Color.Black;
-            this.label44.Location = new System.Drawing.Point(1219, 1010);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(220, 109);
-            this.label44.TabIndex = 93;
-            this.label44.Text = "Parking Office";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label45
-            // 
-            this.label45.BackColor = System.Drawing.Color.Black;
-            this.label45.Location = new System.Drawing.Point(1460, 968);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(100, 154);
-            this.label45.TabIndex = 94;
-            this.label45.Text = "CRP Dept";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label46
-            // 
-            this.label46.BackColor = System.Drawing.Color.Black;
-            this.label46.Location = new System.Drawing.Point(1568, 963);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(100, 154);
-            this.label46.TabIndex = 95;
-            this.label46.Text = "Archi. Dept";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label47
-            // 
-            this.label47.BackColor = System.Drawing.Color.Black;
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(1868, 739);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(106, 182);
-            this.label47.TabIndex = 96;
-            this.label47.Text = "Mining Dept";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label48
-            // 
-            this.label48.BackColor = System.Drawing.Color.Black;
-            this.label48.Location = new System.Drawing.Point(1620, 735);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(136, 83);
-            this.label48.TabIndex = 97;
-            this.label48.Text = "Chemical Dept";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label49
-            // 
-            this.label49.BackColor = System.Drawing.Color.Black;
-            this.label49.Location = new System.Drawing.Point(1459, 735);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(158, 83);
-            this.label49.TabIndex = 98;
-            this.label49.Text = "Data Science";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label50
-            // 
-            this.label50.BackColor = System.Drawing.Color.Black;
-            this.label50.Location = new System.Drawing.Point(1771, 739);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(101, 182);
-            this.label50.TabIndex = 99;
-            this.label50.Text = "Geo- logical dept";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label51
-            // 
-            this.label51.BackColor = System.Drawing.Color.Black;
-            this.label51.Location = new System.Drawing.Point(1620, 820);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(133, 108);
-            this.label51.TabIndex = 100;
-            this.label51.Text = "Polymer Dept";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label52
-            // 
-            this.label52.BackColor = System.Drawing.Color.Black;
-            this.label52.Location = new System.Drawing.Point(1458, 820);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(156, 108);
-            this.label52.TabIndex = 101;
-            this.label52.Text = "Metallurgy dept";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label53
-            // 
-            this.label53.BackColor = System.Drawing.Color.Black;
-            this.label53.Location = new System.Drawing.Point(1737, 623);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(126, 96);
-            this.label53.TabIndex = 102;
-            this.label53.Text = "Colony Gate 2";
-            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label54
-            // 
-            this.label54.BackColor = System.Drawing.Color.Black;
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(1868, 273);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(508, 440);
-            this.label54.TabIndex = 103;
-            this.label54.Text = "Staff Colony";
-            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label55
-            // 
-            this.label55.BackColor = System.Drawing.Color.Black;
-            this.label55.Location = new System.Drawing.Point(1989, 843);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(100, 111);
-            this.label55.TabIndex = 104;
-            this.label55.Text = "Post Office";
-            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label56
-            // 
-            this.label56.BackColor = System.Drawing.Color.Black;
-            this.label56.Location = new System.Drawing.Point(1052, 606);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(130, 111);
-            this.label56.TabIndex = 105;
-            this.label56.Text = "Security Office";
-            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label57
-            // 
-            this.label57.BackColor = System.Drawing.Color.Black;
-            this.label57.Location = new System.Drawing.Point(1187, 606);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(201, 109);
-            this.label57.TabIndex = 106;
-            this.label57.Text = "Bhola Cafe";
-            this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label58
-            // 
-            this.label58.BackColor = System.Drawing.Color.Black;
-            this.label58.Location = new System.Drawing.Point(1053, 529);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(159, 74);
-            this.label58.TabIndex = 107;
-            this.label58.Text = "Sports Complex";
-            this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label59
-            // 
-            this.label59.BackColor = System.Drawing.Color.Black;
-            this.label59.Location = new System.Drawing.Point(753, 605);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(272, 108);
-            this.label59.TabIndex = 108;
-            this.label59.Text = "Mumtaz Hall";
-            this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label60
-            // 
-            this.label60.BackColor = System.Drawing.Color.Black;
-            this.label60.Location = new System.Drawing.Point(929, 828);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(160, 121);
-            this.label60.TabIndex = 109;
-            this.label60.Text = "Shopping Centre";
-            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label61
-            // 
-            this.label61.BackColor = System.Drawing.Color.Black;
-            this.label61.Location = new System.Drawing.Point(728, 791);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(195, 154);
-            this.label61.TabIndex = 110;
-            this.label61.Text = "Zubair Hall";
-            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label62
-            // 
-            this.label62.BackColor = System.Drawing.Color.Black;
-            this.label62.Location = new System.Drawing.Point(559, 534);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(123, 84);
-            this.label62.TabIndex = 111;
-            this.label62.Text = "Q Canteen";
-            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label63
-            // 
-            this.label63.BackColor = System.Drawing.Color.Black;
-            this.label63.Location = new System.Drawing.Point(836, 461);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(196, 111);
-            this.label63.TabIndex = 112;
-            this.label63.Text = "Liaqat Hall";
-            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label64
-            // 
-            this.label64.BackColor = System.Drawing.Color.Black;
-            this.label64.Location = new System.Drawing.Point(691, 460);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(139, 111);
-            this.label64.TabIndex = 113;
-            this.label64.Text = "Quaid-e-Azam Hall";
-            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label65
-            // 
-            this.label65.BackColor = System.Drawing.Color.Black;
-            this.label65.Location = new System.Drawing.Point(699, 85);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(338, 206);
-            this.label65.TabIndex = 114;
-            this.label65.Text = "B- Colony";
-            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label66
-            // 
-            this.label66.BackColor = System.Drawing.Color.Black;
-            this.label66.Location = new System.Drawing.Point(842, 304);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(194, 109);
-            this.label66.TabIndex = 115;
-            this.label66.Text = "Iqbal Hall";
-            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label67
-            // 
-            this.label67.BackColor = System.Drawing.Color.Black;
-            this.label67.Location = new System.Drawing.Point(656, 306);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(180, 107);
-            this.label67.TabIndex = 116;
-            this.label67.Text = "Sir Syed Hall";
-            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // panel64
+            // 
+            this.panel64.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel64.Controls.Add(this.panel65);
+            this.panel64.Location = new System.Drawing.Point(1763, 722);
+            this.panel64.Name = "panel64";
+            this.panel64.Size = new System.Drawing.Size(225, 10);
+            this.panel64.TabIndex = 36;
+            // 
+            // panel65
+            // 
+            this.panel65.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel65.Controls.Add(this.flowLayoutPanel26);
+            this.panel65.Location = new System.Drawing.Point(693, 11);
+            this.panel65.Name = "panel65";
+            this.panel65.Size = new System.Drawing.Size(14, 173);
+            this.panel65.TabIndex = 25;
+            // 
+            // flowLayoutPanel26
+            // 
+            this.flowLayoutPanel26.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel26.Name = "flowLayoutPanel26";
+            this.flowLayoutPanel26.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel26.TabIndex = 0;
+            // 
+            // panel66
+            // 
+            this.panel66.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel66.Controls.Add(this.flowLayoutPanel27);
+            this.panel66.Location = new System.Drawing.Point(1976, 710);
+            this.panel66.Name = "panel66";
+            this.panel66.Size = new System.Drawing.Size(10, 232);
+            this.panel66.TabIndex = 35;
+            // 
+            // flowLayoutPanel27
+            // 
+            this.flowLayoutPanel27.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel27.Name = "flowLayoutPanel27";
+            this.flowLayoutPanel27.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel27.TabIndex = 0;
+            // 
+            // panel67
+            // 
+            this.panel67.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel67.Location = new System.Drawing.Point(2626, 1185);
+            this.panel67.Name = "panel67";
+            this.panel67.Size = new System.Drawing.Size(233, 12);
+            this.panel67.TabIndex = 34;
+            // 
+            // panel68
+            // 
+            this.panel68.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel68.Controls.Add(this.flowLayoutPanel28);
+            this.panel68.Location = new System.Drawing.Point(2338, 1345);
+            this.panel68.Name = "panel68";
+            this.panel68.Size = new System.Drawing.Size(10, 154);
+            this.panel68.TabIndex = 33;
+            // 
+            // flowLayoutPanel28
+            // 
+            this.flowLayoutPanel28.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel28.Name = "flowLayoutPanel28";
+            this.flowLayoutPanel28.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel28.TabIndex = 0;
+            // 
+            // panel69
+            // 
+            this.panel69.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel69.Location = new System.Drawing.Point(1301, 1129);
+            this.panel69.Name = "panel69";
+            this.panel69.Size = new System.Drawing.Size(188, 11);
+            this.panel69.TabIndex = 32;
+            // 
+            // panel70
+            // 
+            this.panel70.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel70.Location = new System.Drawing.Point(2513, 1185);
+            this.panel70.Name = "panel70";
+            this.panel70.Size = new System.Drawing.Size(129, 12);
+            this.panel70.TabIndex = 30;
+            // 
+            // panel71
+            // 
+            this.panel71.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel71.Controls.Add(this.flowLayoutPanel30);
+            this.panel71.Location = new System.Drawing.Point(2338, 1176);
+            this.panel71.Name = "panel71";
+            this.panel71.Size = new System.Drawing.Size(10, 177);
+            this.panel71.TabIndex = 28;
+            // 
+            // flowLayoutPanel30
+            // 
+            this.flowLayoutPanel30.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel30.Name = "flowLayoutPanel30";
+            this.flowLayoutPanel30.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel30.TabIndex = 0;
+            // 
+            // panel72
+            // 
+            this.panel72.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel72.Controls.Add(this.flowLayoutPanel31);
+            this.panel72.Location = new System.Drawing.Point(2478, 1176);
+            this.panel72.Name = "panel72";
+            this.panel72.Size = new System.Drawing.Size(10, 359);
+            this.panel72.TabIndex = 29;
+            // 
+            // flowLayoutPanel31
+            // 
+            this.flowLayoutPanel31.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel31.Name = "flowLayoutPanel31";
+            this.flowLayoutPanel31.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel31.TabIndex = 0;
+            // 
+            // panel73
+            // 
+            this.panel73.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel73.Location = new System.Drawing.Point(2005, 1169);
+            this.panel73.Name = "panel73";
+            this.panel73.Size = new System.Drawing.Size(333, 10);
+            this.panel73.TabIndex = 27;
+            // 
+            // panel74
+            // 
+            this.panel74.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel74.Location = new System.Drawing.Point(2026, 1176);
+            this.panel74.Name = "panel74";
+            this.panel74.Size = new System.Drawing.Size(10, 171);
+            this.panel74.TabIndex = 26;
+            // 
+            // panel75
+            // 
+            this.panel75.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel75.Controls.Add(this.flowLayoutPanel32);
+            this.panel75.Location = new System.Drawing.Point(1760, 725);
+            this.panel75.Name = "panel75";
+            this.panel75.Size = new System.Drawing.Size(10, 140);
+            this.panel75.TabIndex = 25;
+            // 
+            // flowLayoutPanel32
+            // 
+            this.flowLayoutPanel32.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel32.Name = "flowLayoutPanel32";
+            this.flowLayoutPanel32.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel32.TabIndex = 0;
+            // 
+            // panel76
+            // 
+            this.panel76.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel76.Location = new System.Drawing.Point(1212, 1384);
+            this.panel76.Name = "panel76";
+            this.panel76.Size = new System.Drawing.Size(254, 10);
+            this.panel76.TabIndex = 24;
+            // 
+            // panel77
+            // 
+            this.panel77.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel77.Location = new System.Drawing.Point(1459, 1144);
+            this.panel77.Name = "panel77";
+            this.panel77.Size = new System.Drawing.Size(10, 254);
+            this.panel77.TabIndex = 23;
+            // 
+            // panel78
+            // 
+            this.panel78.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel78.Location = new System.Drawing.Point(711, 952);
+            this.panel78.Name = "panel78";
+            this.panel78.Size = new System.Drawing.Size(394, 10);
+            this.panel78.TabIndex = 22;
+            // 
+            // panel79
+            // 
+            this.panel79.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel79.Location = new System.Drawing.Point(1207, 1144);
+            this.panel79.Name = "panel79";
+            this.panel79.Size = new System.Drawing.Size(12, 250);
+            this.panel79.TabIndex = 21;
+            // 
+            // panel80
+            // 
+            this.panel80.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel80.Location = new System.Drawing.Point(1674, 935);
+            this.panel80.Name = "panel80";
+            this.panel80.Size = new System.Drawing.Size(19, 173);
+            this.panel80.TabIndex = 20;
+            // 
+            // panel81
+            // 
+            this.panel81.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel81.Location = new System.Drawing.Point(836, 591);
+            this.panel81.Name = "panel81";
+            this.panel81.Size = new System.Drawing.Size(211, 10);
+            this.panel81.TabIndex = 19;
+            // 
+            // panel82
+            // 
+            this.panel82.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel82.Location = new System.Drawing.Point(688, 575);
+            this.panel82.Name = "panel82";
+            this.panel82.Size = new System.Drawing.Size(357, 10);
+            this.panel82.TabIndex = 18;
+            // 
+            // panel83
+            // 
+            this.panel83.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel83.Location = new System.Drawing.Point(656, 293);
+            this.panel83.Name = "panel83";
+            this.panel83.Size = new System.Drawing.Size(394, 10);
+            this.panel83.TabIndex = 17;
+            // 
+            // panel84
+            // 
+            this.panel84.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel84.Location = new System.Drawing.Point(1448, 932);
+            this.panel84.Name = "panel84";
+            this.panel84.Size = new System.Drawing.Size(236, 10);
+            this.panel84.TabIndex = 16;
+            // 
+            // panel85
+            // 
+            this.panel85.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel85.Controls.Add(this.flowLayoutPanel34);
+            this.panel85.Location = new System.Drawing.Point(1445, 937);
+            this.panel85.Name = "panel85";
+            this.panel85.Size = new System.Drawing.Size(10, 197);
+            this.panel85.TabIndex = 15;
+            // 
+            // flowLayoutPanel34
+            // 
+            this.flowLayoutPanel34.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel34.Name = "flowLayoutPanel34";
+            this.flowLayoutPanel34.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel34.TabIndex = 0;
+            // 
+            // panel86
+            // 
+            this.panel86.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel86.Controls.Add(this.flowLayoutPanel35);
+            this.panel86.Location = new System.Drawing.Point(1973, 930);
+            this.panel86.Name = "panel86";
+            this.panel86.Size = new System.Drawing.Size(10, 242);
+            this.panel86.TabIndex = 14;
+            // 
+            // flowLayoutPanel35
+            // 
+            this.flowLayoutPanel35.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel35.Name = "flowLayoutPanel35";
+            this.flowLayoutPanel35.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel35.TabIndex = 0;
+            // 
+            // panel87
+            // 
+            this.panel87.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel87.Location = new System.Drawing.Point(1676, 1160);
+            this.panel87.Name = "panel87";
+            this.panel87.Size = new System.Drawing.Size(194, 12);
+            this.panel87.TabIndex = 12;
+            // 
+            // panel88
+            // 
+            this.panel88.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel88.Controls.Add(this.flowLayoutPanel36);
+            this.panel88.Location = new System.Drawing.Point(1040, 276);
+            this.panel88.Name = "panel88";
+            this.panel88.Size = new System.Drawing.Size(10, 317);
+            this.panel88.TabIndex = 11;
+            // 
+            // flowLayoutPanel36
+            // 
+            this.flowLayoutPanel36.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel36.Name = "flowLayoutPanel36";
+            this.flowLayoutPanel36.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel36.TabIndex = 0;
+            // 
+            // panel89
+            // 
+            this.panel89.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel89.Controls.Add(this.flowLayoutPanel37);
+            this.panel89.Location = new System.Drawing.Point(1701, 1163);
+            this.panel89.Name = "panel89";
+            this.panel89.Size = new System.Drawing.Size(10, 372);
+            this.panel89.TabIndex = 10;
+            // 
+            // flowLayoutPanel37
+            // 
+            this.flowLayoutPanel37.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel37.Name = "flowLayoutPanel37";
+            this.flowLayoutPanel37.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel37.TabIndex = 0;
+            // 
+            // panel90
+            // 
+            this.panel90.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel90.Controls.Add(this.flowLayoutPanel38);
+            this.panel90.Location = new System.Drawing.Point(1035, 1144);
+            this.panel90.Name = "panel90";
+            this.panel90.Size = new System.Drawing.Size(10, 179);
+            this.panel90.TabIndex = 9;
+            // 
+            // flowLayoutPanel38
+            // 
+            this.flowLayoutPanel38.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel38.Name = "flowLayoutPanel38";
+            this.flowLayoutPanel38.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel38.TabIndex = 0;
+            // 
+            // panel91
+            // 
+            this.panel91.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel91.Location = new System.Drawing.Point(698, 1311);
+            this.panel91.Name = "panel91";
+            this.panel91.Size = new System.Drawing.Size(344, 12);
+            this.panel91.TabIndex = 8;
+            // 
+            // panel92
+            // 
+            this.panel92.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel92.Controls.Add(this.flowLayoutPanel39);
+            this.panel92.Location = new System.Drawing.Point(698, 1132);
+            this.panel92.Name = "panel92";
+            this.panel92.Size = new System.Drawing.Size(10, 179);
+            this.panel92.TabIndex = 7;
+            // 
+            // flowLayoutPanel39
+            // 
+            this.flowLayoutPanel39.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel39.Name = "flowLayoutPanel39";
+            this.flowLayoutPanel39.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel39.TabIndex = 0;
+            // 
+            // panel93
+            // 
+            this.panel93.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel93.Controls.Add(this.panel94);
+            this.panel93.Location = new System.Drawing.Point(698, 1129);
+            this.panel93.Name = "panel93";
+            this.panel93.Size = new System.Drawing.Size(331, 16);
+            this.panel93.TabIndex = 6;
+            // 
+            // panel94
+            // 
+            this.panel94.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel94.Controls.Add(this.flowLayoutPanel40);
+            this.panel94.Location = new System.Drawing.Point(323, 15);
+            this.panel94.Name = "panel94";
+            this.panel94.Size = new System.Drawing.Size(10, 175);
+            this.panel94.TabIndex = 9;
+            // 
+            // flowLayoutPanel40
+            // 
+            this.flowLayoutPanel40.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel40.Name = "flowLayoutPanel40";
+            this.flowLayoutPanel40.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel40.TabIndex = 0;
+            // 
+            // panel95
+            // 
+            this.panel95.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel95.Controls.Add(this.panel96);
+            this.panel95.Location = new System.Drawing.Point(1039, 719);
+            this.panel95.Name = "panel95";
+            this.panel95.Size = new System.Drawing.Size(322, 13);
+            this.panel95.TabIndex = 5;
+            // 
+            // panel96
+            // 
+            this.panel96.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel96.Controls.Add(this.flowLayoutPanel41);
+            this.panel96.Location = new System.Drawing.Point(693, 11);
+            this.panel96.Name = "panel96";
+            this.panel96.Size = new System.Drawing.Size(14, 173);
+            this.panel96.TabIndex = 25;
+            // 
+            // flowLayoutPanel41
+            // 
+            this.flowLayoutPanel41.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel41.Name = "flowLayoutPanel41";
+            this.flowLayoutPanel41.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel41.TabIndex = 0;
+            // 
+            // panel97
+            // 
+            this.panel97.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel97.Location = new System.Drawing.Point(507, -502);
+            this.panel97.Name = "panel97";
+            this.panel97.Size = new System.Drawing.Size(591, 16);
+            this.panel97.TabIndex = 4;
+            // 
+            // panel98
+            // 
+            this.panel98.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel98.Location = new System.Drawing.Point(1092, 963);
+            this.panel98.Name = "panel98";
+            this.panel98.Size = new System.Drawing.Size(10, 179);
+            this.panel98.TabIndex = 3;
+            // 
+            // panel99
+            // 
+            this.panel99.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel99.Location = new System.Drawing.Point(1092, 1129);
+            this.panel99.Name = "panel99";
+            this.panel99.Size = new System.Drawing.Size(127, 13);
+            this.panel99.TabIndex = 2;
+            // 
+            // panel100
+            // 
+            this.panel100.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel100.Controls.Add(this.flowLayoutPanel42);
+            this.panel100.Location = new System.Drawing.Point(1673, 1136);
+            this.panel100.Name = "panel100";
+            this.panel100.Size = new System.Drawing.Size(10, 161);
+            this.panel100.TabIndex = 0;
+            // 
+            // flowLayoutPanel42
+            // 
+            this.flowLayoutPanel42.Location = new System.Drawing.Point(0, 126);
+            this.flowLayoutPanel42.Name = "flowLayoutPanel42";
+            this.flowLayoutPanel42.Size = new System.Drawing.Size(38, 8);
+            this.flowLayoutPanel42.TabIndex = 0;
             // 
             // panel1
             // 
@@ -2443,19 +2457,6 @@
             this.panel1.TabIndex = 9;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(3, 1383);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(515, 145);
-            this.button1.TabIndex = 117;
-            this.button1.Text = "FIND SHORTEST PATH";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
@@ -2504,31 +2505,31 @@
             this.panel43.ResumeLayout(false);
             this.panel44.ResumeLayout(false);
             this.panel51.ResumeLayout(false);
-            this.panel100.ResumeLayout(false);
-            this.panel95.ResumeLayout(false);
-            this.panel96.ResumeLayout(false);
-            this.panel93.ResumeLayout(false);
-            this.panel94.ResumeLayout(false);
-            this.panel92.ResumeLayout(false);
-            this.panel90.ResumeLayout(false);
-            this.panel89.ResumeLayout(false);
-            this.panel88.ResumeLayout(false);
-            this.panel86.ResumeLayout(false);
-            this.panel85.ResumeLayout(false);
-            this.panel75.ResumeLayout(false);
-            this.panel72.ResumeLayout(false);
-            this.panel71.ResumeLayout(false);
-            this.panel68.ResumeLayout(false);
-            this.panel66.ResumeLayout(false);
-            this.panel64.ResumeLayout(false);
-            this.panel65.ResumeLayout(false);
-            this.panel62.ResumeLayout(false);
-            this.panel63.ResumeLayout(false);
+            this.panel103.ResumeLayout(false);
+            this.panel58.ResumeLayout(false);
+            this.panel59.ResumeLayout(false);
             this.panel60.ResumeLayout(false);
             this.panel61.ResumeLayout(false);
-            this.panel59.ResumeLayout(false);
-            this.panel58.ResumeLayout(false);
-            this.panel103.ResumeLayout(false);
+            this.panel62.ResumeLayout(false);
+            this.panel63.ResumeLayout(false);
+            this.panel64.ResumeLayout(false);
+            this.panel65.ResumeLayout(false);
+            this.panel66.ResumeLayout(false);
+            this.panel68.ResumeLayout(false);
+            this.panel71.ResumeLayout(false);
+            this.panel72.ResumeLayout(false);
+            this.panel75.ResumeLayout(false);
+            this.panel85.ResumeLayout(false);
+            this.panel86.ResumeLayout(false);
+            this.panel88.ResumeLayout(false);
+            this.panel89.ResumeLayout(false);
+            this.panel90.ResumeLayout(false);
+            this.panel92.ResumeLayout(false);
+            this.panel93.ResumeLayout(false);
+            this.panel94.ResumeLayout(false);
+            this.panel95.ResumeLayout(false);
+            this.panel96.ResumeLayout(false);
+            this.panel100.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
