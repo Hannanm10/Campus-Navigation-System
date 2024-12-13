@@ -15,9 +15,9 @@ namespace UetMap
             LocationType = locationType;
         }
 
-        public void AddNeighbor(GraphNode node, int distance)
+        public void AddNeighbor(GraphNode node, float distance)
         {
-            Neighbors.Add(node, distance);
+            Neighbors.Add(node, (int)distance);
         }
     }
 }

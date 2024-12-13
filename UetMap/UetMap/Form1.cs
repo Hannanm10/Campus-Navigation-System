@@ -9,9 +9,16 @@ namespace UetMap
         // Variable to hold the current road color
         private Color currentRoadColor;
 
+        private Graph Map;
+
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent(); 
+            Map = new Graph();
+            comboBox1.DataSource = Enum.GetValues(typeof(Locations));
+            comboBox1.SelectedIndex = -1;
+            comboBox2.DataSource = Enum.GetValues(typeof(Locations));
+            comboBox2.SelectedIndex = -1;
 
             // Set default road color
             //currentRoadColor = Color.Blue;
@@ -53,8 +60,7 @@ namespace UetMap
             Graphics g = e.Graphics;
 
             // Pen for road with the current color
-            Pen roadPen = new Pen(currentRoadColor, 3
-                );
+            Pen roadPen = new Pen(currentRoadColor, 3);
             roadPen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
             roadPen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
 
@@ -72,7 +78,8 @@ namespace UetMap
 
         private void LoadNodes()
         {
-            GraphNode Gate3 = new GraphNode("Main Gate","Entry/Exit");
+            // Create and add all GraphNodes to the Map object
+            GraphNode Gate3 = new GraphNode("Main Gate", "Entry/Exit");
             GraphNode Electrical = new GraphNode("Electrical Engg.", "Department");
             GraphNode Library = new GraphNode("Library", "Library");
             GraphNode CS = new GraphNode("Computer Science", "Department");
@@ -84,7 +91,7 @@ namespace UetMap
             GraphNode KICS = new GraphNode("KICS", "Institute");
             GraphNode Mechanical = new GraphNode("Mechanical Engg.", "Department");
             GraphNode Mechatronics = new GraphNode("Mechatronics Dept.", "Department");
-            GraphNode Auditorium = new GraphNode("UET Auditorium","Department");
+            GraphNode Auditorium = new GraphNode("UET Auditorium", "Department");
             GraphNode Physics = new GraphNode("Physics Dept.", "Department");
             GraphNode Gate5 = new GraphNode("Gate 5", "Gate");
             GraphNode Khadija = new GraphNode("Khadija Hall", "Hostel");
@@ -137,6 +144,73 @@ namespace UetMap
             GraphNode Polymer = new GraphNode("Polymer Engg.", "Department");
             GraphNode ColonyGate2 = new GraphNode("Colony Gate 2", "Gate");
 
+            // Add nodes to the Map
+            Map.AddNode(Gate3);
+            Map.AddNode(Electrical);
+            Map.AddNode(Library);
+            Map.AddNode(CS);
+            Map.AddNode(Civil);
+            Map.AddNode(Transportation);
+            Map.AddNode(GSSC);
+            Map.AddNode(ComputerEngg);
+            Map.AddNode(Math);
+            Map.AddNode(KICS);
+            Map.AddNode(Mechanical);
+            Map.AddNode(Mechatronics);
+            Map.AddNode(Auditorium);
+            Map.AddNode(Physics);
+            Map.AddNode(Gate5);
+            Map.AddNode(Khadija);
+            Map.AddNode(PowerHouse);
+            Map.AddNode(FacultyHostel);
+            Map.AddNode(GirlsGround);
+            Map.AddNode(NewGirls);
+            Map.AddNode(Mining);
+            Map.AddNode(Postoffice);
+            Map.AddNode(StaffColony);
+            Map.AddNode(Chemical);
+            Map.AddNode(Geological);
+            Map.AddNode(Metallurgical);
+            Map.AddNode(DataScience);
+            Map.AddNode(JJ);
+            Map.AddNode(FootballGround);
+            Map.AddNode(BholaCafe);
+            Map.AddNode(SecurityOffice);
+            Map.AddNode(SportsComplex);
+            Map.AddNode(BColony);
+            Map.AddNode(MumtazHall);
+            Map.AddNode(QuaideAzamHall);
+            Map.AddNode(LiaquatHall);
+            Map.AddNode(QCanteen);
+            Map.AddNode(IqbalHall);
+            Map.AddNode(SirSyedHall);
+            Map.AddNode(ShoppingCentre);
+            Map.AddNode(ZubairHall);
+            Map.AddNode(MBQHall);
+            Map.AddNode(EdhiHall);
+            Map.AddNode(SSC);
+            Map.AddNode(TariqHall);
+            Map.AddNode(KhalidHall);
+            Map.AddNode(AnnexeGround);
+            Map.AddNode(Automotive);
+            Map.AddNode(Workshop);
+            Map.AddNode(Annexe);
+            Map.AddNode(Chemistry);
+            Map.AddNode(IBM);
+            Map.AddNode(JamiaMosque);
+            Map.AddNode(TransportOffice);
+            Map.AddNode(ArchEngg);
+            Map.AddNode(IslamicStudies);
+            Map.AddNode(AdminOffice);
+            Map.AddNode(HBL);
+            Map.AddNode(VCOffice);
+            Map.AddNode(Lalazar);
+            Map.AddNode(CRP);
+            Map.AddNode(Architecture);
+            Map.AddNode(Polymer);
+            Map.AddNode(ColonyGate2);
+
+
             Edge IqbalToBColony = new Edge(IqbalHall, BColony, panel83);
             Edge SirSyedToBColony = new Edge(SirSyedHall, BColony, panel83);
             Edge BColonyToSportsComplex = new Edge(BColony, SportsComplex, panel88);
@@ -161,6 +235,7 @@ namespace UetMap
             Edge StaffColonyToMining = new Edge(StaffColony, Mining, panel66);
             Edge StaffColonyToPostOffice = new Edge(StaffColony, Postoffice, panel66);
             Edge PolymerToMining = new Edge(Polymer, Mining, panel104);
+            Edge PolymerToPostOffice = new Edge(Polymer, Postoffice, panel104);
             Edge CRPToMasjid = new Edge(CRP, JamiaMosque, panel69);
             Edge MasjidToTransportOffice = new Edge(JamiaMosque, TransportOffice, panel55);
             Edge TransportOfficeToIBM = new Edge(TransportOffice, IBM, panel99);
@@ -192,7 +267,7 @@ namespace UetMap
             Edge LalazarToCRP = new Edge(Lalazar, CRP, panel77);
             Edge IslToVCOffice = new Edge(IslamicStudies, VCOffice, panel53);
             Edge LalazarToVCOffice = new Edge(Lalazar, VCOffice, panel53);
-            Edge PostOfficeToGSSC =  new Edge(Postoffice, GSSC, panel86);
+            Edge PostOfficeToGSSC = new Edge(Postoffice, GSSC, panel86);
             Edge MiningToGSSC = new Edge(Mining, GSSC, panel86);
             Edge CRPToArchitecture = new Edge(CRP, Architecture, panel105);
             Edge ArchitectureToLibrary = new Edge(Architecture, Library, panel106);
@@ -225,8 +300,97 @@ namespace UetMap
             Edge FacultyHostelToNewGirlsHall = new Edge(FacultyHostel, NewGirls, panel67);
             Edge GirlsGroundToNewGirlsHAll = new Edge(GirlsGround, NewGirls, panel67);
 
+            Map.AddEdge(IqbalToBColony, 64);
+            Map.AddEdge(SirSyedToBColony, 170);
+            Map.AddEdge(BColonyToSportsComplex, 200);
+            Map.AddEdge(SportsComplexToQuaid, 250);
+            Map.AddEdge(SportsComplexToQCanteen, 250);
+            Map.AddEdge(SportsComplexToLiaquatHall, 140);
+            Map.AddEdge(SportsComplexToMumtaz, 210);
+            Map.AddEdge(SportsComplexToSecurity, 190);
+            Map.AddEdge(SecurityOfficeToJJ, 160);
+            Map.AddEdge(SecurityOfficeToBhola, 83);
+            Map.AddEdge(SecurityOfficeToFtGround, 54);
+            Map.AddEdge(JJToDataScience, 61);
+            Map.AddEdge(BholaToDataScience, 120);
+            Map.AddEdge(FootballGToDataScience, 150);
+            Map.AddEdge(DataScienceToGate2, 120);
+            Map.AddEdge(ColonyGate2ToColonyGate1, 84);
+            Map.AddEdge(ColonyGate2ToChem, 57);
+            Map.AddEdge(ColonyGate2ToGeology, 57);
+            Map.AddEdge(DataScienceToMetallurgy, 130);
+            Map.AddEdge(MetallurgyToCRP, 110);
+            Map.AddEdge(MetallurgyToPolymer, 76);
+            Map.AddEdge(StaffColonyToMining, 100);
+            Map.AddEdge(StaffColonyToPostOffice, 110);
+            Map.AddEdge(PolymerToMining, 130);
+            Map.AddEdge(PolymerToPostOffice, 130);
+            Map.AddEdge(CRPToMasjid, 72);
+            Map.AddEdge(MasjidToTransportOffice, 61);
+            Map.AddEdge(TransportOfficeToIBM, 44);
+            Map.AddEdge(TransportOfficeToSSC, 44);
+            Map.AddEdge(SecurityOfficeToShopping, 100);
+            Map.AddEdge(ShoppingToEdhiHall, 180);
+            Map.AddEdge(ShoppingToZubairHall, 130);
+            Map.AddEdge(ShoppingToMBQHall, 140);
+            Map.AddEdge(ShoppingToSSC, 120);
+            Map.AddEdge(SSCToAnnexeGround, 31);
+            Map.AddEdge(IBMToAnnexeGround, 31);
+            Map.AddEdge(SSCToTariqHall, 31);
+            Map.AddEdge(IBMToTariqHall, 31);
+            Map.AddEdge(TariqToKhalid, 140);
+            Map.AddEdge(AnnexeGroundToKhalid, 140);
+            Map.AddEdge(KhalidToAnnexe, 120);
+            Map.AddEdge(KhalidToChemistry, 120);
+            Map.AddEdge(KhalidToWorkshop, 140);
+            Map.AddEdge(AnnexeToAutomotive, 160);
+            Map.AddEdge(ChemistryToAutomotive, 160);
+            Map.AddEdge(WorkShopToAutomotive, 160);
+            Map.AddEdge(AutomotiveToAnnexeGround, 140);
+            Map.AddEdge(TransportOfficeToArchEngg, 97);
+            Map.AddEdge(ArchEnggToAdminOffice, 210);
+            Map.AddEdge(ArchEnggToHBL, 210);
+            Map.AddEdge(ArchEnggToIsl, 120);
+            Map.AddEdge(ArchEnggToLalazar, 120);
+            Map.AddEdge(IslToCRP, 130);
+            Map.AddEdge(LalazarToCRP, 130);
+            Map.AddEdge(IslToVCOffice, 98);
+            Map.AddEdge(LalazarToVCOffice, 98);
+            Map.AddEdge(PostOfficeToGSSC, 140);
+            Map.AddEdge(MiningToGSSC, 140);
+            Map.AddEdge(CRPToArchitecture, 53);
+            Map.AddEdge(ArchitectureToLibrary, 45);
+            Map.AddEdge(LibraryToLalazar, 30);
+            Map.AddEdge(LalazarToElectrical, 50);
+            Map.AddEdge(ElectricalToGate3, 30);
+            Map.AddEdge(PolymerToLibrary, 110);
+            Map.AddEdge(LibraryToCivil, 150);
+            Map.AddEdge(LibraryToCS, 150);
+            Map.AddEdge(LibraryToTransportation, 150);
+            Map.AddEdge(CivilToGSSC, 68);
+            Map.AddEdge(CSToGSSC, 68);
+            Map.AddEdge(TransportationToGSSC, 68);
+            Map.AddEdge(GSSCToKICS, 96);
+            Map.AddEdge(GSSCToMath, 96);
+            Map.AddEdge(GSSCToCE, 96);
+            Map.AddEdge(MathToMechatronics, 40);
+            Map.AddEdge(KICSToMechatronics, 40);
+            Map.AddEdge(CEToMechatronics, 40);
+            Map.AddEdge(MathToMechanical, 40);
+            Map.AddEdge(KICSToMechanical, 40);
+            Map.AddEdge(CEToMechanical, 40);
+            Map.AddEdge(GSSCToAuditorium, 150);
+            Map.AddEdge(AudiToPhysics, 250);
+            Map.AddEdge(PhysicsToGate5, 84);
+            Map.AddEdge(AuditoriumToKhadijaHall, 71);
+            Map.AddEdge(KhadijaHallToPowerHouse, 92);
+            Map.AddEdge(KhadijaHallToFacultyHostel, 74);
+            Map.AddEdge(KhadijaHallToGirlsGround, 74);
+            Map.AddEdge(FacultyHostelToNewGirlsHall, 69);
+            Map.AddEdge(GirlsGroundToNewGirlsHAll, 69);
 
         }
+
 
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -250,6 +414,11 @@ namespace UetMap
         }
 
         private void panel51_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }

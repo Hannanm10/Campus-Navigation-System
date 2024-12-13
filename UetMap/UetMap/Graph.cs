@@ -21,16 +21,25 @@ namespace UetMap
         }
 
         // Add edge between nodes (undirected graph)
-        public void AddEdge(GraphNode from, GraphNode to, int distance, Color lineColor, float lineWidth = 10f)
+        public void AddEdge(Edge edge, float distance)
         {
-            if (!from.Neighbors.ContainsKey(to))
-                from.AddNeighbor(to, distance);
+            // Ensure the nodes in the edge exist in the graph
+            if (!Nodes.Contains(edge.StartNode))
+                Nodes.Add(edge.StartNode);
 
-            if (!to.Neighbors.ContainsKey(from))
-                to.AddNeighbor(from, distance);
+            if (!Nodes.Contains(edge.EndNode))
+                Nodes.Add(edge.EndNode);
 
-            // Add visual representation of the edge
-            //Edges.Add(new Edge(from, to, lineColor, lineWidth));
+            // Add the edge to the graph
+            edge.Distance = distance;
+            Edges.Add(edge);
+
+            // Add neighbors with distance (if not already added)
+            if (!edge.StartNode.Neighbors.ContainsKey(edge.EndNode))
+                edge.StartNode.AddNeighbor(edge.EndNode, edge.Distance);
+
+            if (!edge.EndNode.Neighbors.ContainsKey(edge.StartNode))
+                edge.EndNode.AddNeighbor(edge.StartNode, edge.Distance);
         }
 
         // Find node by name (Location lookup)
@@ -50,22 +59,26 @@ namespace UetMap
 
         public List<GraphNode> Dijkstra(GraphNode start, GraphNode end)
         {
-            var distances = new HashMap<GraphNode, int>();
-            var previousNodes = new HashMap<GraphNode, GraphNode>();
-            var unvisitedNodes = new HashSet<GraphNode>(Nodes);
+            var distances = new HashMap<GraphNode, int>(100); // Initialize with custom HashMap
+            var previousNodes = new HashMap<GraphNode, GraphNode>(100); // Another HashMap for previous nodes
+            var unvisitedNodes = new HashMap<GraphNode, bool>(100); // Using HashMap as a set
 
             // Initialize distances and previous nodes
             foreach (var node in Nodes)
             {
                 distances.Add(node, int.MaxValue); // Set initial distances to infinity
                 previousNodes.Add(node, null);    // No previous nodes initially
+                unvisitedNodes.Add(node, true);  // Add all nodes to unvisitedNodes
             }
             distances.Add(start, 0); // Distance to the start node is 0
 
-            while (unvisitedNodes.Count > 0)
+            while (unvisitedNodes.GetAll().Any())
             {
                 // Get the closest node
-                var closestNode = unvisitedNodes.OrderBy(node => distances.Get(node)).First();
+                var closestNode = unvisitedNodes.GetAll()
+                    .Select(pair => pair.Key) // Extract the keys (GraphNodes)
+                    .OrderBy(node => distances.ContainsKey(node) ? distances.Get(node) : int.MaxValue)
+                    .First();
                 unvisitedNodes.Remove(closestNode);
 
                 if (closestNode == end)
@@ -95,6 +108,7 @@ namespace UetMap
             path.Reverse(); // Reverse the list to get the correct order
             return path;
         }
+
 
 
         // BFS Traversal
@@ -137,6 +151,7 @@ namespace UetMap
         public GraphNode EndNode { get; set; }
         public Panel RoadPanel { get; set; }
 
+        public float Distance;
 
         public Edge(GraphNode startNode, GraphNode endNode, Panel roadPanel)
         {
