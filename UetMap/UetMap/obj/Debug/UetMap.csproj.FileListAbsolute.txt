@@ -18,3 +18,13 @@ C:\Users\HANNAN\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.
 C:\Users\HANNAN\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.csproj.CoreCompileInputs.cache
 C:\Users\HANNAN\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.exe
 C:\Users\HANNAN\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.pdb
+C:\Users\Hp\Desktop\Campus-Navigation-System\UetMap\UetMap\bin\Debug\UetMap.exe.config
+C:\Users\Hp\Desktop\Campus-Navigation-System\UetMap\UetMap\bin\Debug\UetMap.exe
+C:\Users\Hp\Desktop\Campus-Navigation-System\UetMap\UetMap\bin\Debug\UetMap.pdb
+C:\Users\Hp\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.csproj.AssemblyReference.cache
+C:\Users\Hp\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.Form1.resources
+C:\Users\Hp\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.Properties.Resources.resources
+C:\Users\Hp\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.csproj.GenerateResource.cache
+C:\Users\Hp\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.csproj.CoreCompileInputs.cache
+C:\Users\Hp\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.exe
+C:\Users\Hp\Desktop\Campus-Navigation-System\UetMap\UetMap\obj\Debug\UetMap.pdb
