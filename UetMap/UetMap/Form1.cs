@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace UetMap
@@ -14,7 +15,7 @@ namespace UetMap
 
         public Form1()
         {
-            InitializeComponent(); 
+            InitializeComponent();
             Map = new Graph();
             comboBox1.DataSource = Enum.GetValues(typeof(Locations));
             comboBox1.SelectedIndex = -1;
@@ -343,6 +344,175 @@ namespace UetMap
             Map.AddEdge(GirlsGroundToNewGirlsHAll, 69);
         }
 
+        private void ProcessAllPaths(UetMap.List<UetMap.List<GraphNode>> paths)
+        {
+            // Declare variables to track the top three paths and their distances
+            float firstShortestDistance = float.MaxValue;
+            float secondShortestDistance = float.MaxValue;
+            float thirdShortestDistance = float.MaxValue;
+
+            UetMap.List<GraphNode> firstShortestPath = null;
+            UetMap.List<GraphNode> secondShortestPath = null;
+            UetMap.List<GraphNode> thirdShortestPath = null;
+
+            foreach (var path in paths)
+            {
+                float dis = 0;
+
+                // Calculate the total distance of the current path
+                using (var enumerator = path.GetEnumerator())
+                {
+                    if (!enumerator.MoveNext()) continue; // Skip empty paths
+
+                    var node1 = enumerator.Current;
+
+                    while (enumerator.MoveNext())
+                    {
+                        var node2 = enumerator.Current;
+
+                        // Find the edge between these two nodes
+                        var edge = Map.FindEdge(node1, node2);
+
+                        if (edge != null)
+                        {
+                            // Sum up the distances of the edges
+                            dis += edge.Distance;
+
+                            // Optionally process edge visual appearance
+                            //edge.RoadPanel.BackColor = Color.LightGreen;
+                        }
+
+                        node1 = node2; // Move to the next node
+                    }
+                }
+
+                // Track the top three shortest paths
+                if (dis < firstShortestDistance)
+                {
+                    // Replace the first shortest path
+                    thirdShortestDistance = secondShortestDistance;
+                    thirdShortestPath = secondShortestPath;
+
+                    secondShortestDistance = firstShortestDistance;
+                    secondShortestPath = firstShortestPath;
+
+                    firstShortestDistance = dis;
+                    firstShortestPath = path;
+                }
+                else if (dis < secondShortestDistance)
+                {
+                    // Replace the second shortest path
+                    thirdShortestDistance = secondShortestDistance;
+                    thirdShortestPath = secondShortestPath;
+
+                    secondShortestDistance = dis;
+                    secondShortestPath = path;
+                }
+                else if (dis < thirdShortestDistance)
+                {
+                    // Replace the third shortest path
+                    thirdShortestDistance = dis;
+                    thirdShortestPath = path;
+                }
+            }
+
+            // Change the color of the edges in the top three paths
+            ChangeEdgeColors(firstShortestPath, Color.Blue);
+            //ChangeEdgeColors(secondShortestPath, Color.Blue);
+            ChangeEdgeColors(thirdShortestPath, Color.Red);
+        }
+
+        // Helper method to change the edge colors for a given path
+        private void ChangeEdgeColors(UetMap.List<GraphNode> path, Color color)
+        {
+            if (path == null) return; // If path is null, do nothing
+
+            using (var enumerator = path.GetEnumerator())
+            {
+                if (!enumerator.MoveNext()) return; // Skip empty paths
+
+                var node1 = enumerator.Current;
+
+                while (enumerator.MoveNext())
+                {
+                    var node2 = enumerator.Current;
+
+                    // Find the edge between these two nodes
+                    var edge = Map.FindEdge(node1, node2);
+
+                    if (edge != null)
+                    {
+                        // Set the color of the edge's RoadPanel
+                        edge.RoadPanel.BackColor = color;
+                        currentColored.Add(edge.RoadPanel);
+                    }
+
+                    node1 = node2; // Move to the next node
+                }
+            }
+        }
+
+
+
+
+
+        private UetMap.List<UetMap.List<GraphNode>> GetTopThreeShortestPaths(UetMap.List<UetMap.List<GraphNode>> allPaths)
+        {
+            // Create a list to store paths along with their total distances (using the built-in List<T>)
+            var pathDistances = new List<(UetMap.List<GraphNode> path, float distance)>();
+
+            // Iterate through all paths and calculate the distance
+            foreach (var path in allPaths)
+            {
+                float totalDistance = 0;
+
+                // Calculate the total distance of this path
+                using (var enumerator = path.GetEnumerator())
+                {
+                    if (!enumerator.MoveNext()) continue; // Skip empty paths
+
+                    var node1 = enumerator.Current;
+
+                    while (enumerator.MoveNext())
+                    {
+                        var node2 = enumerator.Current;
+                        var edge = Map.FindEdge(node1, node2);
+
+                        if (edge != null)
+                        {
+                            totalDistance += edge.Distance; // Sum up the distances of the edges
+                        }
+
+                        node1 = node2; // Move to the next node
+                    }
+                }
+
+                // Add the path and its total distance to the list
+                pathDistances.Add((path, totalDistance));
+            }
+
+            // Sort the paths based on their total distance
+            pathDistances.Sort((x, y) => x.distance.CompareTo(y.distance));
+
+            // Create a new list to hold the top 3 shortest paths
+            var topThreePaths = new UetMap.List<UetMap.List<GraphNode>>();
+
+            // Iterate over the first 3 elements and add them to topThreePaths
+            int count = 0;
+            foreach (var pathDistance in pathDistances)
+            {
+                if (count >= 3)
+                    break;  // Stop once we've added 3 paths
+
+                topThreePaths.Add(pathDistance.path);  // Add the path to the result list
+                count++;
+            }
+
+            return topThreePaths;
+        }
+
+
+
 
         private void ProcessPathEdges(UetMap.List<GraphNode> path)
         {
@@ -441,14 +611,15 @@ namespace UetMap
             }
             else
             {
-                List<GraphNode> path = Map.Dijkstra(Map.FindNode(comboBox1.Text), Map.FindNode(comboBox2.Text));
+                GraphNode start = Map.FindNode(comboBox1.SelectedItem.ToString());
+                GraphNode end = Map.FindNode(comboBox2.SelectedItem.ToString());
+                List<GraphNode> path = Map.Dijkstra(start, end);
                 ProcessPathEdges(path);
             }
         }
 
         private void Reset()
         {
-
             comboBox1.SelectedItem=null;
             comboBox2.SelectedItem=null;
             textBox1.Text = "";
@@ -460,7 +631,7 @@ namespace UetMap
             {
                 if (panel != null)
                 {
-                    panel.BackColor = Color.DeepSkyBlue;
+                    panel.BackColor = Color.Black;
                 }
             }
         }
@@ -468,6 +639,32 @@ namespace UetMap
         private void button2_Click(object sender, EventArgs e)
         {
             Reset();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedItem == null || comboBox2.SelectedItem == null)
+            {
+                MessageBox.Show("Fill Details First!!!");
+                Reset();
+            }
+            else if (comboBox1.Text == comboBox2.Text)
+            {
+                MessageBox.Show("Choose Different Locations!!!");
+                Reset();
+            }
+            else if (!comboBox1.Items.Contains(comboBox1.SelectedItem) || !comboBox2.Items.Contains(comboBox2.SelectedItem))
+            {
+                MessageBox.Show("Choose from locations Provided!!!");
+                Reset();
+            }
+            else
+            {
+                GraphNode start = Map.FindNode(comboBox1.SelectedItem.ToString());
+                GraphNode end = Map.FindNode(comboBox2.SelectedItem.ToString());
+                List<List<GraphNode>> nodes = Map.FindAllPaths(start, end);
+                ProcessAllPaths(nodes);
+            }
         }
     }
 }

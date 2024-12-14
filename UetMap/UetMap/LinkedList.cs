@@ -127,6 +127,33 @@ namespace UetMap
                 current = current.Next;
             }
         }
+        public void Sort(Comparison<T> comparison)
+        {
+            // If the list is empty or has only one item, there's nothing to sort
+            if (head == null || head.Next == null)
+                return;
+
+            // Convert the linked list to an array or a List<T> to use the built-in sorting
+            var items = new List<T>();
+            var current = head;
+            while (current != null)
+            {
+                items.Add(current.Data);
+                current = current.Next;
+            }
+
+            // Sort the list using the provided comparison function
+            items.Sort(comparison);
+
+            // Rebuild the linked list with the sorted items
+            head = null; // Clear the current list
+            foreach (var item in items)
+            {
+                Add(item); // Add items back in sorted order
+            }
+        }
+
+
 
         public void Clear()
         {

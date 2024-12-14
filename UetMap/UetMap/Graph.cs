@@ -154,6 +154,56 @@ namespace UetMap
 
             return result;
         }
+        public List<List<GraphNode>> FindAllPaths(GraphNode start, GraphNode end)
+        {
+            var result = new List<List<GraphNode>>(); // To store all the paths
+            var visited = new HashMap<GraphNode, bool>(100); // Using your custom HashMap for visited nodes
+            var currentPath = new List<GraphNode>(); // Using your custom List<T> class for the current path
+
+            // Helper function for DFS traversal
+            void DFS(GraphNode currentNode)
+            {
+                // Mark the current node as visited
+                visited.Add(currentNode, true);
+                currentPath.Add(currentNode); // Add the current node to the path
+
+                // If we reached the destination node, save the path
+                if (currentNode == end)
+                {
+                    var pathCopy = new List<GraphNode>(currentPath); // Create a copy of the path
+                    result.Add(pathCopy);
+                }
+                else
+                {
+                    // Explore the neighbors of the current node
+                    foreach (var pair in currentNode.Neighbors.GetAll()) // Assuming GetAll() returns key-value pairs
+                    {
+                        var neighbor = pair.Key; // The neighboring node
+                        if (!visited.ContainsKey(neighbor) || !visited.Get(neighbor)) // Check if neighbor is unvisited
+                        {
+                            DFS(neighbor); // Recursively visit the neighbor
+                        }
+                    }
+                }
+
+                // Backtrack: remove the current node from the path and mark it as unvisited
+                currentPath.Remove(currentNode); // Use Remove instead of RemoveAt
+                visited.Add(currentNode, false); // Mark as unvisited
+            }
+
+            // Initialize visited map with all nodes set to false
+            foreach (var node in Nodes)
+            {
+                visited.Add(node, false);
+            }
+
+            // Start DFS from the source node
+            DFS(start);
+
+            return result;
+        }
+
+
     }
 
     // Edge class representing a painted road (visual element)
