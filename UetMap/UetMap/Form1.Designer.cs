@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,6 +37,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -112,6 +114,9 @@
             this.panel49 = new System.Windows.Forms.Panel();
             this.panel50 = new System.Windows.Forms.Panel();
             this.panel51 = new System.Windows.Forms.Panel();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
@@ -251,10 +256,7 @@
             this.panel100 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel42 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -343,20 +345,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(521, 1792);
             this.tableLayoutPanel2.TabIndex = 6;
             // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(3, 1619);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(515, 145);
-            this.button2.TabIndex = 118;
-            this.button2.Text = "REACHED";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -436,6 +424,34 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(3, 1619);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(515, 145);
+            this.button2.TabIndex = 118;
+            this.button2.Text = "REACHED";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Location = new System.Drawing.Point(3, 1420);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(515, 145);
+            this.button3.TabIndex = 118;
+            this.button3.Text = "SHOW NEXT PATH";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -483,13 +499,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Copperplate Gothic Bold", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(110, 64);
+            this.label1.Location = new System.Drawing.Point(339, 64);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1920, 104);
+            this.label1.Size = new System.Drawing.Size(1461, 104);
             this.label1.TabIndex = 3;
-            this.label1.Text = "UET CAMPUS NAVIGATION SYSTEM";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Text = "UET CAMPUS NAVIGATION";
             // 
             // panel2
             // 
@@ -499,7 +514,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(10, 367);
             this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // flowLayoutPanel1
             // 
@@ -515,7 +529,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(127, 13);
             this.panel4.TabIndex = 2;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // panel5
             // 
@@ -1066,6 +1079,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel51.BackColor = System.Drawing.Color.LightSlateGray;
             this.panel51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel51.Controls.Add(this.label70);
             this.panel51.Controls.Add(this.label69);
             this.panel51.Controls.Add(this.label68);
             this.panel51.Controls.Add(this.label5);
@@ -1187,7 +1201,41 @@
             this.panel51.Name = "panel51";
             this.panel51.Size = new System.Drawing.Size(2985, 1789);
             this.panel51.TabIndex = 47;
-            this.panel51.Paint += new System.Windows.Forms.PaintEventHandler(this.panel51_Paint);
+            // 
+            // label69
+            // 
+            this.label69.BackColor = System.Drawing.Color.White;
+            this.label69.ForeColor = System.Drawing.Color.Black;
+            this.label69.Location = new System.Drawing.Point(2281, 1507);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(131, 77);
+            this.label69.TabIndex = 119;
+            this.label69.Text = "Gate 5";
+            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label69.Click += new System.EventHandler(this.label69_Click);
+            // 
+            // label68
+            // 
+            this.label68.BackColor = System.Drawing.Color.White;
+            this.label68.ForeColor = System.Drawing.Color.Black;
+            this.label68.Location = new System.Drawing.Point(1622, 1530);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(131, 73);
+            this.label68.TabIndex = 118;
+            this.label68.Text = "Gate 3";
+            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label68.Click += new System.EventHandler(this.label68_Click);
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.DarkRed;
+            this.label5.Location = new System.Drawing.Point(2487, 1421);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(100, 106);
+            this.label5.TabIndex = 117;
+            this.label5.Text = "PowerHouse";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label67
             // 
@@ -1198,6 +1246,7 @@
             this.label67.TabIndex = 116;
             this.label67.Text = "Sir Syed Hall";
             this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label67.Click += new System.EventHandler(this.label67_Click);
             // 
             // label66
             // 
@@ -1208,6 +1257,7 @@
             this.label66.TabIndex = 115;
             this.label66.Text = "Iqbal Hall";
             this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label66.Click += new System.EventHandler(this.label66_Click);
             // 
             // label65
             // 
@@ -1218,6 +1268,7 @@
             this.label65.TabIndex = 114;
             this.label65.Text = "B- Colony";
             this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label65.Click += new System.EventHandler(this.label65_Click);
             // 
             // label64
             // 
@@ -1228,6 +1279,7 @@
             this.label64.TabIndex = 113;
             this.label64.Text = "Quaid-e-Azam Hall";
             this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label64.Click += new System.EventHandler(this.label64_Click);
             // 
             // label63
             // 
@@ -1238,6 +1290,7 @@
             this.label63.TabIndex = 112;
             this.label63.Text = "Liaqat Hall";
             this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label63.Click += new System.EventHandler(this.label63_Click);
             // 
             // label62
             // 
@@ -1248,6 +1301,7 @@
             this.label62.TabIndex = 111;
             this.label62.Text = "Q Canteen";
             this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label62.Click += new System.EventHandler(this.label62_Click);
             // 
             // label61
             // 
@@ -1258,6 +1312,7 @@
             this.label61.TabIndex = 110;
             this.label61.Text = "Zubair Hall";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label61.Click += new System.EventHandler(this.label61_Click);
             // 
             // label60
             // 
@@ -1268,6 +1323,7 @@
             this.label60.TabIndex = 109;
             this.label60.Text = "Shopping Centre";
             this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label60.Click += new System.EventHandler(this.label60_Click);
             // 
             // label59
             // 
@@ -1278,6 +1334,7 @@
             this.label59.TabIndex = 108;
             this.label59.Text = "Mumtaz Hall";
             this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label59.Click += new System.EventHandler(this.label59_Click);
             // 
             // label58
             // 
@@ -1288,6 +1345,7 @@
             this.label58.TabIndex = 107;
             this.label58.Text = "Sports Complex";
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label58.Click += new System.EventHandler(this.label58_Click);
             // 
             // label57
             // 
@@ -1298,6 +1356,7 @@
             this.label57.TabIndex = 106;
             this.label57.Text = "Bhola Cafe";
             this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label57.Click += new System.EventHandler(this.label57_Click);
             // 
             // label56
             // 
@@ -1308,6 +1367,7 @@
             this.label56.TabIndex = 105;
             this.label56.Text = "Security Office";
             this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label56.Click += new System.EventHandler(this.label56_Click);
             // 
             // label55
             // 
@@ -1318,6 +1378,7 @@
             this.label55.TabIndex = 104;
             this.label55.Text = "Post Office";
             this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label55.Click += new System.EventHandler(this.label55_Click);
             // 
             // label54
             // 
@@ -1329,6 +1390,7 @@
             this.label54.TabIndex = 103;
             this.label54.Text = "Staff Colony";
             this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label54.Click += new System.EventHandler(this.label54_Click);
             // 
             // label53
             // 
@@ -1340,6 +1402,7 @@
             this.label53.TabIndex = 102;
             this.label53.Text = "Colony Gate 2";
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label53.Click += new System.EventHandler(this.label53_Click);
             // 
             // label52
             // 
@@ -1350,6 +1413,7 @@
             this.label52.TabIndex = 101;
             this.label52.Text = "Metallurgy dept";
             this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label52.Click += new System.EventHandler(this.label52_Click);
             // 
             // label51
             // 
@@ -1360,16 +1424,18 @@
             this.label51.TabIndex = 100;
             this.label51.Text = "Polymer Dept";
             this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label51.Click += new System.EventHandler(this.label51_Click);
             // 
             // label50
             // 
             this.label50.BackColor = System.Drawing.Color.Navy;
-            this.label50.Location = new System.Drawing.Point(1771, 739);
+            this.label50.Location = new System.Drawing.Point(1769, 739);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(101, 182);
             this.label50.TabIndex = 99;
             this.label50.Text = "Geo- logical dept";
             this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label50.Click += new System.EventHandler(this.label50_Click);
             // 
             // label49
             // 
@@ -1380,6 +1446,7 @@
             this.label49.TabIndex = 98;
             this.label49.Text = "Data Science";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label49.Click += new System.EventHandler(this.label49_Click);
             // 
             // label48
             // 
@@ -1390,6 +1457,7 @@
             this.label48.TabIndex = 97;
             this.label48.Text = "Chemical Dept";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label48.Click += new System.EventHandler(this.label48_Click);
             // 
             // label47
             // 
@@ -1401,6 +1469,7 @@
             this.label47.TabIndex = 96;
             this.label47.Text = "Mining Dept";
             this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label47.Click += new System.EventHandler(this.label47_Click);
             // 
             // label46
             // 
@@ -1411,6 +1480,7 @@
             this.label46.TabIndex = 95;
             this.label46.Text = "Archi. Dept";
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label46.Click += new System.EventHandler(this.label46_Click);
             // 
             // label45
             // 
@@ -1421,6 +1491,7 @@
             this.label45.TabIndex = 94;
             this.label45.Text = "CRP Dept";
             this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label45.Click += new System.EventHandler(this.label45_Click);
             // 
             // label44
             // 
@@ -1431,6 +1502,7 @@
             this.label44.TabIndex = 93;
             this.label44.Text = "Parking Office";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label44.Click += new System.EventHandler(this.label44_Click);
             // 
             // label43
             // 
@@ -1441,6 +1513,7 @@
             this.label43.TabIndex = 92;
             this.label43.Text = "MBQ Hall";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label43.Click += new System.EventHandler(this.label43_Click);
             // 
             // label42
             // 
@@ -1451,6 +1524,7 @@
             this.label42.TabIndex = 91;
             this.label42.Text = "Edhi Hall";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label42.Click += new System.EventHandler(this.label42_Click);
             // 
             // label41
             // 
@@ -1461,6 +1535,7 @@
             this.label41.TabIndex = 90;
             this.label41.Text = "Khalid Hall";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label41.Click += new System.EventHandler(this.label41_Click);
             // 
             // label40
             // 
@@ -1471,6 +1546,7 @@
             this.label40.TabIndex = 89;
             this.label40.Text = "Tariq Hall";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label40.Click += new System.EventHandler(this.label40_Click);
             // 
             // label39
             // 
@@ -1481,6 +1557,7 @@
             this.label39.TabIndex = 88;
             this.label39.Text = "SSC";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label39.Click += new System.EventHandler(this.label39_Click);
             // 
             // label38
             // 
@@ -1491,6 +1568,7 @@
             this.label38.TabIndex = 87;
             this.label38.Text = "Football Ground";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label38.Click += new System.EventHandler(this.label38_Click);
             // 
             // label37
             // 
@@ -1501,6 +1579,7 @@
             this.label37.TabIndex = 86;
             this.label37.Text = "JJ Cricket Ground";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label37.Click += new System.EventHandler(this.label37_Click);
             // 
             // label36
             // 
@@ -1511,6 +1590,7 @@
             this.label36.TabIndex = 85;
             this.label36.Text = "Annexe";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label36.Click += new System.EventHandler(this.label36_Click);
             // 
             // label35
             // 
@@ -1521,6 +1601,7 @@
             this.label35.TabIndex = 84;
             this.label35.Text = "Chem. Dept /   Workshop";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label35.Click += new System.EventHandler(this.label35_Click);
             // 
             // label34
             // 
@@ -1531,6 +1612,7 @@
             this.label34.TabIndex = 83;
             this.label34.Text = "Automotive dept.";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label34.Click += new System.EventHandler(this.label34_Click);
             // 
             // label33
             // 
@@ -1541,6 +1623,7 @@
             this.label33.TabIndex = 82;
             this.label33.Text = "IBM";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label33.Click += new System.EventHandler(this.label33_Click);
             // 
             // label32
             // 
@@ -1551,6 +1634,7 @@
             this.label32.TabIndex = 81;
             this.label32.Text = "Annexe Ground";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label32.Click += new System.EventHandler(this.label32_Click);
             // 
             // label31
             // 
@@ -1561,6 +1645,7 @@
             this.label31.TabIndex = 80;
             this.label31.Text = "HBL ";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label31.Click += new System.EventHandler(this.label31_Click);
             // 
             // label30
             // 
@@ -1571,6 +1656,7 @@
             this.label30.TabIndex = 79;
             this.label30.Text = "Admin Block";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label30.Click += new System.EventHandler(this.label30_Click);
             // 
             // label29
             // 
@@ -1581,6 +1667,7 @@
             this.label29.TabIndex = 78;
             this.label29.Text = "VC Office";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label29.Click += new System.EventHandler(this.label29_Click);
             // 
             // label28
             // 
@@ -1591,6 +1678,7 @@
             this.label28.TabIndex = 77;
             this.label28.Text = "Islamiyat  Dept";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label28.Click += new System.EventHandler(this.label28_Click);
             // 
             // label27
             // 
@@ -1601,13 +1689,14 @@
             this.label27.TabIndex = 76;
             this.label27.Text = "Archi. Eng.";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // label26
             // 
             this.label26.BackColor = System.Drawing.Color.OliveDrab;
-            this.label26.Location = new System.Drawing.Point(1225, 1143);
+            this.label26.Location = new System.Drawing.Point(1225, 1140);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(230, 144);
+            this.label26.Size = new System.Drawing.Size(230, 147);
             this.label26.TabIndex = 75;
             this.label26.Text = "Jamia Masjid";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1620,6 +1709,7 @@
             this.label25.Size = new System.Drawing.Size(66, 179);
             this.label25.TabIndex = 74;
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // label24
             // 
@@ -1629,6 +1719,7 @@
             this.label24.Size = new System.Drawing.Size(256, 72);
             this.label24.TabIndex = 73;
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label24.Click += new System.EventHandler(this.label24_Click);
             // 
             // label23
             // 
@@ -1639,6 +1730,7 @@
             this.label23.TabIndex = 72;
             this.label23.Text = "Electrical dept.";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
             // label22
             // 
@@ -1649,26 +1741,29 @@
             this.label22.TabIndex = 71;
             this.label22.Text = "Library";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // label21
             // 
-            this.label21.BackColor = System.Drawing.Color.LimeGreen;
+            this.label21.BackColor = System.Drawing.Color.LightSeaGreen;
             this.label21.Location = new System.Drawing.Point(1475, 1242);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(197, 135);
             this.label21.TabIndex = 70;
             this.label21.Text = "Lalazar";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // label20
             // 
             this.label20.BackColor = System.Drawing.Color.Navy;
-            this.label20.Location = new System.Drawing.Point(1717, 1177);
+            this.label20.Location = new System.Drawing.Point(1717, 1171);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(203, 91);
+            this.label20.Size = new System.Drawing.Size(203, 97);
             this.label20.TabIndex = 69;
             this.label20.Text = "CS Dept.";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // label19
             // 
@@ -1679,36 +1774,40 @@
             this.label19.TabIndex = 68;
             this.label19.Text = "Math Dept";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // label18
             // 
             this.label18.BackColor = System.Drawing.Color.Navy;
-            this.label18.Location = new System.Drawing.Point(1926, 1296);
+            this.label18.Location = new System.Drawing.Point(1929, 1270);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(100, 86);
+            this.label18.Size = new System.Drawing.Size(100, 102);
             this.label18.TabIndex = 67;
             this.label18.Text = "KICS";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // label17
             // 
             this.label17.BackColor = System.Drawing.Color.Navy;
-            this.label17.Location = new System.Drawing.Point(2036, 1441);
+            this.label17.Location = new System.Drawing.Point(2034, 1438);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(111, 106);
             this.label17.TabIndex = 66;
             this.label17.Text = "Mecha-tronics Dept";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label16
             // 
             this.label16.BackColor = System.Drawing.Color.Navy;
-            this.label16.Location = new System.Drawing.Point(2036, 1319);
+            this.label16.Location = new System.Drawing.Point(2036, 1332);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(100, 106);
             this.label16.TabIndex = 65;
             this.label16.Text = "Mech. Dept";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // label15
             // 
@@ -1719,6 +1818,7 @@
             this.label15.TabIndex = 64;
             this.label15.Text = "CE Dept";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // label14
             // 
@@ -1729,6 +1829,7 @@
             this.label14.TabIndex = 63;
             this.label14.Text = "GSSC";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // label13
             // 
@@ -1739,6 +1840,7 @@
             this.label13.TabIndex = 62;
             this.label13.Text = "Trans- portation dept";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label12
             // 
@@ -1749,6 +1851,7 @@
             this.label12.TabIndex = 61;
             this.label12.Text = "Auditorium";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label11
             // 
@@ -1759,6 +1862,7 @@
             this.label11.TabIndex = 60;
             this.label11.Text = "Physics Dept";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label10
             // 
@@ -1769,6 +1873,7 @@
             this.label10.TabIndex = 59;
             this.label10.Text = "Civil Dept.";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
@@ -1779,6 +1884,7 @@
             this.label9.TabIndex = 58;
             this.label9.Text = "Khadija Hall";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -1800,6 +1906,7 @@
             this.label7.TabIndex = 56;
             this.label7.Text = "Girls Ground";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -1810,6 +1917,7 @@
             this.label6.TabIndex = 55;
             this.label6.Text = "Girls Hostel";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // panel107
             // 
@@ -2481,53 +2589,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2978, 1789);
             this.panel1.TabIndex = 9;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button3
+            // label70
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button3.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(25, 1413);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(515, 145);
-            this.button3.TabIndex = 118;
-            this.button3.Text = "SHOW NEXT PATH";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.DarkRed;
-            this.label5.Location = new System.Drawing.Point(2487, 1421);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 106);
-            this.label5.TabIndex = 117;
-            this.label5.Text = "PowerHouse";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label68
-            // 
-            this.label68.BackColor = System.Drawing.Color.White;
-            this.label68.ForeColor = System.Drawing.Color.Black;
-            this.label68.Location = new System.Drawing.Point(1622, 1530);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(131, 73);
-            this.label68.TabIndex = 118;
-            this.label68.Text = "Gate 3";
-            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label69
-            // 
-            this.label69.BackColor = System.Drawing.Color.White;
-            this.label69.ForeColor = System.Drawing.Color.Black;
-            this.label69.Location = new System.Drawing.Point(2281, 1507);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(131, 77);
-            this.label69.TabIndex = 119;
-            this.label69.Text = "Gate 5";
-            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label70.BackColor = System.Drawing.Color.Olive;
+            this.label70.Location = new System.Drawing.Point(1717, 1270);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(206, 168);
+            this.label70.TabIndex = 120;
+            this.label70.Text = "Parking";
+            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label70.Click += new System.EventHandler(this.label70_Click);
             // 
             // Form1
             // 
@@ -2540,6 +2612,7 @@
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
             this.ForeColor = System.Drawing.Color.White;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form1";
             this.Text = "Map";
@@ -2836,6 +2909,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label70;
     }
 }
 
