@@ -9,9 +9,9 @@ namespace UetMap
     class Graph
     {
         public List<GraphNode> Nodes { get; set; } = new List<GraphNode>();
-        public List<Edge> Edges { get; set; } = new List<Edge>(); // Store painted edges (roads)
+        public List<Edge> Edges { get; set; } = new List<Edge>(); 
 
-        private List<List<GraphNode>> routeHistory = new List<List<GraphNode>>(); // Route history
+        private List<List<GraphNode>> routeHistory = new List<List<GraphNode>>();
 
         // Add node to graph
         public void AddNode(GraphNode node)
