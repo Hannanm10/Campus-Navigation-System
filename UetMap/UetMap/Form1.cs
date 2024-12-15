@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.IO;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace UetMap
 {
@@ -20,6 +22,7 @@ namespace UetMap
             comboBox2.DataSource = Enum.GetValues(typeof(Locations));
             comboBox2.SelectedIndex = -1;
             currentColored = new List<Panel>();
+            LoadStringsToComboBox();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -551,6 +554,7 @@ namespace UetMap
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ChangePanelColorsToBlack();
             if (comboBox1.SelectedItem == null || comboBox2.SelectedItem == null)
             {
                 MessageBox.Show("Fill Details First!!!");
@@ -572,6 +576,7 @@ namespace UetMap
                 GraphNode end = Map.FindNode(comboBox2.SelectedItem.ToString());
                 List<GraphNode> path = Map.Dijkstra(start, end);
                 ProcessPathEdges(path);
+                LogSelectedRoute();
             }
         }
 
@@ -579,8 +584,43 @@ namespace UetMap
         {
             comboBox1.SelectedItem=null;
             comboBox2.SelectedItem=null;
+            comboBox4.SelectedItem = null;
             textBox1.Text = "";
             ChangePanelColors();
+        }
+
+        public static void SetPanelsToBlack(Form form, List<string> panelIds)
+        {
+            foreach (string panelId in panelIds)
+            {
+                // Find the panel by its name
+                Control[] controls = form.Controls.Find(panelId, true);
+                if (controls.Length > 0 && controls[0] is Panel)
+                {
+                    Panel panel = (Panel)controls[0];
+                    panel.BackColor = Color.Black; // Set background color to black
+                }
+              
+            }
+        }
+
+        private void ChangePanelColorsToBlack()
+        {
+            List<string> panelIds = new List<string>
+    {
+        "panel83", "panel88", "panel82", "panel81", "panel58", "panel95",
+        "panel60", "panel62", "panel64", "panel75", "panel59", "panel85",
+        "panel84", "panel66", "panel104", "panel69", "panel55", "panel99",
+        "panel57", "panel78", "panel98", "panel56", "panel93", "panel92",
+        "panel91", "panel90", "panel79", "panel54", "panel76", "panel77",
+        "panel53", "panel86", "panel105", "panel106", "panel100", "panel102",
+        "panel103", "panel80", "panel87", "panel52", "panel74", "panel107",
+        "panel73", "panel71", "panel68", "panel101", "panel72", "panel70",
+        "panel67"
+    };
+
+            // Call the function to change the panel colors
+            SetPanelsToBlack(this, panelIds);
         }
 
         private void ChangePanelColors()
@@ -594,6 +634,77 @@ namespace UetMap
             }
         }
 
+        private  void LogSelectedRoute()
+        {
+
+            if (comboBox1.SelectedItem != null && comboBox2.SelectedItem != null)
+            {
+                // Get current location and destination
+                string currentLocation = comboBox1.SelectedItem.ToString();
+                string destination = comboBox2.SelectedItem.ToString();
+
+                // Get the current date (without time)
+                string date = DateTime.Now.ToString("yyyy-MM-dd");
+
+                // Log entry (source and destination first, then date)
+                string logEntry = $"From: {currentLocation} To: {destination} - Date: {date}";
+
+                // File path
+                string filePath = "RouteHistoryLog.txt";
+
+                // Append to the file
+                File.AppendAllText(filePath, logEntry + Environment.NewLine);
+
+                // Reload the ComboBox items (optional, if needed)
+                LoadStringsToComboBox();
+            }
+
+        }
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+           
+                // Check if a valid item is selected
+                if (comboBox4.SelectedItem != null)
+                {
+                    string selectedItem = comboBox4.SelectedItem.ToString();
+
+                    // Find the position of the "From:" and "To:" parts
+                    int fromIndex = selectedItem.IndexOf("From:") + 5; // Skip "From:"
+                    int toIndex = selectedItem.IndexOf("To:") + 3; // Skip "To:"
+                    int dateIndex = selectedItem.IndexOf(" - Date:"); // Find the start of "Date"
+
+                    // Extract "From" and "To" parts
+                    string fromPart = selectedItem.Substring(fromIndex, toIndex - fromIndex - 3).Trim(); // Remove the "To:" part
+                    string toPart = selectedItem.Substring(toIndex, dateIndex - toIndex).Trim(); // Remove the "Date" part
+
+                // Set the respective values to comboBox1 and comboBox2
+                    //MessageBox.Show(fromPart,toPart);
+                    comboBox1.Text = fromPart;
+                    //MessageBox.Show(comboBox1.SelectedItem.ToString());
+                    comboBox2.Text = toPart;
+                     //MessageBox.Show(comboBox2.SelectedItem.ToString());
+            }
+            
+        }
+
+        private void LoadStringsToComboBox()
+        {
+            try
+            {
+                comboBox4.Items.Clear();
+                // Read all lines from the file
+                string[] lines = File.ReadAllLines("RouteHistoryLog.txt");
+
+                // Add lines to the ComboBox
+                comboBox4.Items.AddRange(lines);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading file: {ex.Message}");
+            }
+        }
+        
         private void button2_Click(object sender, EventArgs e)
         {
             Reset();
@@ -1079,5 +1190,6 @@ namespace UetMap
             MessageBox.Show("Sports Complex");
             label58.BorderStyle = BorderStyle.None;
         }
+
     }
 }
