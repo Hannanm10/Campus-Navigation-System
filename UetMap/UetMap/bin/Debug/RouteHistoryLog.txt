@@ -1,2 +1,5 @@
 From: ElectricalDepartment To: GSSC - Date: 2024-12-15
 From: ElectricalDepartment To: GSSC - Date: 2024-12-15
+From: ElectricalDepartment To: GSSC - Date: 2024-12-15
+From: ComputerScience To: StaffColony - Date: 2024-12-15
+From: StaffColony To: MathematicsDepartment - Date: 2024-12-15
