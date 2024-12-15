@@ -8,8 +8,6 @@ namespace UetMap
 {
     public partial class Form1 : Form
     {
-        // Variable to hold the current road color
-        private Color currentRoadColor;
         private List<Panel> currentColored;
         private Graph Map;
 

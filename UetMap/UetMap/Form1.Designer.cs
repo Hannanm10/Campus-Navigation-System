@@ -114,6 +114,7 @@
             this.panel49 = new System.Windows.Forms.Panel();
             this.panel50 = new System.Windows.Forms.Panel();
             this.panel51 = new System.Windows.Forms.Panel();
+            this.panel67 = new System.Windows.Forms.Panel();
             this.label70 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
@@ -209,7 +210,6 @@
             this.flowLayoutPanel26 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel66 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel27 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel67 = new System.Windows.Forms.Panel();
             this.panel68 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel28 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel69 = new System.Windows.Forms.Panel();
@@ -362,7 +362,7 @@
             // 
             this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 279);
+            this.comboBox1.Location = new System.Drawing.Point(3, 278);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(515, 39);
             this.comboBox1.TabIndex = 10;
@@ -384,7 +384,7 @@
             // 
             this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(3, 677);
+            this.comboBox2.Location = new System.Drawing.Point(3, 676);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(515, 39);
             this.comboBox2.TabIndex = 11;
@@ -1201,6 +1201,14 @@
             this.panel51.Name = "panel51";
             this.panel51.Size = new System.Drawing.Size(2985, 1789);
             this.panel51.TabIndex = 47;
+            // 
+            // panel67
+            // 
+            this.panel67.BackColor = System.Drawing.Color.Black;
+            this.panel67.Location = new System.Drawing.Point(2631, 1162);
+            this.panel67.Name = "panel67";
+            this.panel67.Size = new System.Drawing.Size(221, 11);
+            this.panel67.TabIndex = 34;
             // 
             // label70
             // 
@@ -2164,14 +2172,6 @@
             this.flowLayoutPanel27.Name = "flowLayoutPanel27";
             this.flowLayoutPanel27.Size = new System.Drawing.Size(38, 8);
             this.flowLayoutPanel27.TabIndex = 0;
-            // 
-            // panel67
-            // 
-            this.panel67.BackColor = System.Drawing.Color.Black;
-            this.panel67.Location = new System.Drawing.Point(2631, 1162);
-            this.panel67.Name = "panel67";
-            this.panel67.Size = new System.Drawing.Size(221, 11);
-            this.panel67.TabIndex = 34;
             // 
             // panel68
             // 
