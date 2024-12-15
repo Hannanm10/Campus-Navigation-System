@@ -631,390 +631,455 @@ namespace UetMap
         {
             label54.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Colony");
+            label54.BorderStyle = BorderStyle.None;
         }
 
         private void label65_Click(object sender, EventArgs e)
         {
             label65.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Colony");
+            label65.BorderStyle = BorderStyle.None;
         }
 
         private void label67_Click(object sender, EventArgs e)
         {
             label67.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Boys Hostel");
+            label67.BorderStyle = BorderStyle.None;
         }
 
         private void label66_Click(object sender, EventArgs e)
         {
             label66.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Boys Hostel");
+            label66.BorderStyle = BorderStyle.None;
         }
 
         private void label64_Click(object sender, EventArgs e)
         {
             label64.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Boys Hostel");
+            label64.BorderStyle = BorderStyle.None;
         }
 
         private void label63_Click(object sender, EventArgs e)
         {
             label63.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Boys Hostel");
+            label63.BorderStyle = BorderStyle.None;
         }
 
         private void label59_Click(object sender, EventArgs e)
         {
             label59.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Boys Hostel");
+            label59.BorderStyle = BorderStyle.None;
         }
 
         private void label61_Click(object sender, EventArgs e)
         {
             label61.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Boys Hostel");
+            label61.BorderStyle = BorderStyle.None;
         }
 
         private void label42_Click(object sender, EventArgs e)
         {
             label42.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Boys Hostel");
+            label42.BorderStyle = BorderStyle.None;
         }
 
         private void label43_Click(object sender, EventArgs e)
         {
             label43.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Boys Hostel");
+            label43.BorderStyle = BorderStyle.None;
         }
 
         private void label41_Click(object sender, EventArgs e)
         {
             label41.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Boys Hostel");
+            label41.BorderStyle = BorderStyle.None;
         }
 
         private void label40_Click(object sender, EventArgs e)
         {
             label40.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Boys Hostel");
+            label40.BorderStyle = BorderStyle.None;
         }
 
         private void label9_Click(object sender, EventArgs e)
         {
             label9.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Girls Hostel");
+            label9.BorderStyle = BorderStyle.None;
         }
 
         private void label8_Click(object sender, EventArgs e)
         {
             label8.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Faculty/Bachelor Hostel");
+            label9.BorderStyle = BorderStyle.None;
         }
 
         private void label6_Click(object sender, EventArgs e)
         {
             label6.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Girls Hostel");
+            label6.BorderStyle = BorderStyle.None;
         }
 
         private void label62_Click(object sender, EventArgs e)
         {
             label62.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Cafe");
+            label62.BorderStyle = BorderStyle.None;
         }
 
         private void label39_Click(object sender, EventArgs e)
         {
             label39.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Cafe");
+            label39.BorderStyle = BorderStyle.None;
         }
 
         private void label36_Click(object sender, EventArgs e)
         {
             label36.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Cafe");
+            label36.BorderStyle = BorderStyle.None;
         }
 
         private void label14_Click(object sender, EventArgs e)
         {
             label14.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Cafe");
+            label14.BorderStyle = BorderStyle.None;
         }
 
         private void label57_Click(object sender, EventArgs e)
         {
             label57.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Cafe");
+            label57.BorderStyle = BorderStyle.None;
         }
 
         private void label32_Click(object sender, EventArgs e)
         {
             label32.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Sports Ground");
+            label32.BorderStyle = BorderStyle.None;
         }
 
         private void label38_Click(object sender, EventArgs e)
         {
             label38.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Sports Ground");
+            label38.BorderStyle = BorderStyle.None;
         }
 
         private void label37_Click(object sender, EventArgs e)
         {
             label37.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Sports Ground");
+            label37.BorderStyle = BorderStyle.None;
         }
 
         private void label7_Click(object sender, EventArgs e)
         {
             label7.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Sports Ground");
+            label7.BorderStyle = BorderStyle.None;
         }
 
         private void label60_Click(object sender, EventArgs e)
         {
             label60.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Shopping");
+            label60.BorderStyle = BorderStyle.None;
         }
 
         private void label12_Click(object sender, EventArgs e)
         {
             label12.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("UET Auditorium");
+            label12.BorderStyle = BorderStyle.None;
         }
 
         private void label22_Click(object sender, EventArgs e)
         {
             label22.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Library");
+            label22.BorderStyle = BorderStyle.None;
         }
 
         private void label21_Click(object sender, EventArgs e)
         {
             label21.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Park");
+            label21.BorderStyle = BorderStyle.None;
         }
 
         private void label68_Click(object sender, EventArgs e)
         {
             label68.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("UET Main Gate");
+            label68.BorderStyle = BorderStyle.None;
         }
 
         private void label69_Click(object sender, EventArgs e)
         {
             label69.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("UET Gate No.5");
+            label69.BorderStyle = BorderStyle.None;
         }
 
         private void label53_Click(object sender, EventArgs e)
         {
             label53.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Staff Colony Gate 2");
+            label53.BorderStyle = BorderStyle.None;
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
             label5.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("UET PowerHouse");
+            label5.BorderStyle = BorderStyle.None;
         }
 
         private void label31_Click(object sender, EventArgs e)
         {
             label31.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("HBL Bank");
+            label31.BorderStyle = BorderStyle.None;
         }
 
         private void label29_Click(object sender, EventArgs e)
         {
             label29.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Office");
+            label29.BorderStyle = BorderStyle.None;
         }
 
         private void label30_Click(object sender, EventArgs e)
         {
             label30.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Office");
+            label30.BorderStyle = BorderStyle.None;
         }
 
         private void label55_Click(object sender, EventArgs e)
         {
             label55.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Office");
+            label55.BorderStyle = BorderStyle.None;
         }
 
         private void label56_Click(object sender, EventArgs e)
         {
             label56.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Office");
+            label56.BorderStyle = BorderStyle.None;
         }
 
         private void label44_Click(object sender, EventArgs e)
         {
             label44.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Office");
+            label44.BorderStyle = BorderStyle.None;
         }
 
         private void label70_Click(object sender, EventArgs e)
         {
             label70.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("UET Main Parking");
+            label70.BorderStyle = BorderStyle.None;
         }
 
         private void label35_Click(object sender, EventArgs e)
         {
             label35.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department/Mechanical Workshop");
+            label35.BorderStyle = BorderStyle.None;
         }
 
         private void label34_Click(object sender, EventArgs e)
         {
             label34.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label34.BorderStyle = BorderStyle.None;
         }
 
         private void label33_Click(object sender, EventArgs e)
         {
             label33.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label33.BorderStyle = BorderStyle.None;
         }
 
         private void label27_Click(object sender, EventArgs e)
         {
             label27.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label27.BorderStyle = BorderStyle.None;
         }
 
         private void label28_Click(object sender, EventArgs e)
         {
             label28.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label28.BorderStyle = BorderStyle.None;
         }
 
         private void label23_Click(object sender, EventArgs e)
         {
             label23.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label23.BorderStyle = BorderStyle.None;
         }
 
         private void label45_Click(object sender, EventArgs e)
         {
             label45.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label45.BorderStyle = BorderStyle.None;
         }
 
         private void label46_Click(object sender, EventArgs e)
         {
             label46.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label46.BorderStyle = BorderStyle.None;
         }
 
         private void label52_Click(object sender, EventArgs e)
         {
             label52.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label52.BorderStyle = BorderStyle.None;
         }
 
         private void label49_Click(object sender, EventArgs e)
         {
             label49.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label49.BorderStyle = BorderStyle.None;
         }
 
         private void label48_Click(object sender, EventArgs e)
         {
             label48.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label48.BorderStyle = BorderStyle.None;
         }
 
         private void label51_Click(object sender, EventArgs e)
         {
             label51.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label51.BorderStyle = BorderStyle.None;
         }
 
         private void label50_Click(object sender, EventArgs e)
         {
             label50.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label50.BorderStyle = BorderStyle.None;
         }
 
         private void label47_Click(object sender, EventArgs e)
         {
             label47.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label47.BorderStyle = BorderStyle.None;
         }
 
         private void label25_Click(object sender, EventArgs e)
         {
             label25.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label25.BorderStyle = BorderStyle.None;
         }
 
         private void label10_Click(object sender, EventArgs e)
         {
             label10.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label10.BorderStyle = BorderStyle.None;
         }
 
         private void label24_Click(object sender, EventArgs e)
         {
             label24.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label24.BorderStyle = BorderStyle.None;
         }
 
         private void label13_Click(object sender, EventArgs e)
         {
             label13.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label13.BorderStyle = BorderStyle.None;
         }
 
         private void label20_Click(object sender, EventArgs e)
         {
             label20.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label20.BorderStyle = BorderStyle.None;
         }
 
         private void label19_Click(object sender, EventArgs e)
         {
             label19.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label19.BorderStyle = BorderStyle.None;
         }
 
         private void label18_Click(object sender, EventArgs e)
         {
             label18.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label18.BorderStyle = BorderStyle.None;
         }
 
         private void label15_Click(object sender, EventArgs e)
         {
             label15.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label15.BorderStyle = BorderStyle.None;
         }
 
         private void label16_Click(object sender, EventArgs e)
         {
             label16.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label16.BorderStyle = BorderStyle.None;
         }
 
         private void label17_Click(object sender, EventArgs e)
         {
             label17.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label17.BorderStyle = BorderStyle.None;
         }
 
         private void label11_Click(object sender, EventArgs e)
         {
             label11.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Department");
+            label11.BorderStyle = BorderStyle.None;
         }
 
         private void label58_Click(object sender, EventArgs e)
         {
             label58.BorderStyle = BorderStyle.Fixed3D;
             MessageBox.Show("Sports Complex");
+            label58.BorderStyle = BorderStyle.None;
         }
     }
 }
