@@ -1,5 +1,5 @@
 ## Campus Navigation System
-The project focuses on using data structures to implement a navigation system.
+The project focuses on using data structures & algorithms to implement a campus navigation system.
 
 ## How To Use
 1. Choose Starting location from the combobox provided.
